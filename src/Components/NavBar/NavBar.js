@@ -6,6 +6,8 @@ import { AiOutlineFundProjectionScreen, AiOutlineHome } from "react-icons/ai";
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { MdOutlineLibraryBooks } from 'react-icons/md';
 import { FaBlog } from 'react-icons/fa'
+import { AiFillStar } from 'react-icons/ai';
+import { GoGitBranch } from 'react-icons/go';
 
 const NavBar = () => {
 
@@ -58,6 +60,12 @@ const NavBar = () => {
                 <li>
                     <span className='reactNavIcons'> <FaBlog /> </span>
                     <Link to={'/blog'}>Blog</Link>
+                </li>
+
+                <li>
+                    <span className='reactNavIcons gitBranch'>
+                        <Link to={'https://github.com/Rakesh-99/React-Personal-Portfolio-'}> <GoGitBranch/> <AiFillStar/> </Link>
+                    </span>
                 </li>
             </ul>
 
