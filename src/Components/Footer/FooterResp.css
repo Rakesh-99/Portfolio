@@ -1,0 +1,17 @@
+@media(max-width:975px){
+    .footerSection p{
+        font-size: 10px;
+    }
+}
+@media(max-width:650px){
+    .footerSection{
+        display: flex;
+        flex-direction: column;
+    }
+    .footerSection p{
+        margin: 10px 0;
+    }
+     .footerSection ul{
+        margin-top: 10px;
+    }
+}

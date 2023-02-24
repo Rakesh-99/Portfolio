@@ -1,0 +1,54 @@
+.projectCard {
+  width: 400px;
+  background-color: rgb(16, 0, 31);
+  margin: 2rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.projectCard .card {
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 1px 1px 10px rgb(82, 81, 81);
+  margin: 0 10px;
+  transition: 1s;
+}
+.projectCard .card:hover {
+  transform: scale(1.03);
+  transition: 1s;
+  box-shadow: 1px 1px 20px rgb(82, 81, 81);
+}
+.card .imgContainer {
+  width: 100%;
+}
+.card .project1Img {
+  width: 100%;
+}
+.card .navLinks {
+  display: flex;
+  justify-content: space-around;
+  margin: 1rem 0;
+}
+.card .navLinks a {
+  text-decoration: none;
+  color: #fff;
+  padding: 10px 30px;
+  border-radius: 5px;
+  background-color: rgb(201, 98, 248);
+  margin: 0 2rem;
+}
+.card .projectTitle {
+  margin: 1rem 0;
+  padding: 0 10px;
+}
+.card .aboutProject {
+  margin: 1rem 0;
+  font-size: 15px;
+  padding: 0 10px;
+}
+
+/* Responsive  */
+

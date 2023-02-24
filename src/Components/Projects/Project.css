@@ -1,0 +1,20 @@
+.projectContainer {
+  width: 100%;
+  background-color: rgb(16, 0, 31);
+  padding: 1rem 10px;
+  color: #fff;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.projectContainer .work {
+  color: rgb(201, 98, 248);
+}
+.projectInfo {
+  background-color: rgb(16, 0, 31);
+  padding-top: 10rem;
+  color: #fff;
+  text-align: center;
+  margin-top: -4rem;
+}

@@ -1,0 +1,21 @@
+.githubContainer {
+  width: 100%;
+  text-align: center;
+  padding: 1rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.githubTitl {
+  color: #fff;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+.styles_calendar__kghkr text {
+  fill: currentColor;
+  color: #fff;
+}
+.aboutContainer i{
+  color: #fff;
+}

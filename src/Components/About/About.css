@@ -1,0 +1,133 @@
+.aboutContainer {
+  width: 100%;
+  background-color: rgb(16, 0, 31);
+}
+.aboutContainer .aboutInfo .aboutLeftInfo h1 {
+  color: #fff;
+}
+.aboutLeftInfoTitle .iAm {
+  color: rgb(201, 98, 248);
+  font-weight: 400;
+  text-align: center;
+}
+.aboutLeftInfoTitle {
+  text-align: center;
+  padding: 2rem 0;
+}
+.aboutInfo {
+  /* height: 100vh; */
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 9rem 4rem;
+  justify-content: space-around;
+}
+.aboutInfo .aboutLeftInfo {
+  width: 50%;
+}
+.aboutInfo .aboutRightInfo {
+  width: 50%;
+  text-align: center;
+}
+.clr {
+  color: rgb(201, 98, 248);
+}
+.aboutRightInfo img {
+  width: 80%;
+}
+.aboutLeftInfo .myInfo {
+  color: #fff;
+  font-weight: 400;
+  font-size: 1.1rem;
+  padding-bottom: 2rem;
+}
+.aboutLeftInfo .hobbiesList {
+  display: flex;
+  color: #fff;
+  flex-direction: column;
+  padding-left: 3rem;
+}
+.aboutInfo .hobbiesList .handIcons {
+  padding-bottom: 1rem;
+}
+.quote p {
+  color: rgb(201, 98, 248);
+  font-size: 1rem;
+}
+.quote {
+  text-align: center;
+  padding: 1rem 0;
+}
+.quote .name {
+  color: rgb(201, 98, 248);
+}
+
+/* Responsive  */
+
+@media screen and (max-width: 360px) {
+  .aboutInfo {
+    flex-direction: column;
+  }
+  .aboutInfo .aboutLeftInfo {
+    width: 100%;
+  }
+  .aboutInfo {
+    padding: 3rem 1.5rem;
+  }
+  .aboutInfo .aboutRightInfo {
+    width: 100%;
+  }
+  .quote p {
+    font-size: 13px;
+  }
+  .quote .name {
+    font-size: 12px;
+  }
+  .aboutLeftInfo .myInfo {
+    font-size: 13px;
+  }
+  .aboutInfo .hobbiesList .handIcons {
+    font-size: 13px;
+  }
+  .aboutLeftInfoTitle h1 {
+    font-size: 19px;
+    font-weight: 400;
+  }
+}
+@media screen and (max-width: 1044px) {
+  .aboutInfo .aboutRightInfo {
+    width: 50%;
+  }
+  .aboutLeftInfo .myInfo {
+    font-size: 15px;
+  }
+  .aboutRightInfo img {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 950px) {
+  .aboutInfo {
+    flex-direction: column;
+  }
+  .aboutInfo .aboutLeftInfo {
+    width: 100%;
+  }
+  .aboutInfo .aboutRightInfo {
+    width: 100%;
+    margin-top: 2rem;
+  }
+  .aboutRightInfo img {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 510px) {
+  .aboutInfo {
+    padding: 9rem 2rem;
+  }
+}
+@media screen and (max-width: 410px) {
+  .aboutLeftInfo .myInfo {
+    font-size: 14px;
+  }
+
+}

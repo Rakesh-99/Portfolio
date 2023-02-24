@@ -1,0 +1,11 @@
+.toolsTitle {
+  text-align: center;
+  color: #fff;
+  font-weight: 500;
+}
+.toolsTitle .toolsClr {
+  color: rgb(201, 98, 248);
+}
+.toolsContainer {
+  margin-top: 5rem;
+}

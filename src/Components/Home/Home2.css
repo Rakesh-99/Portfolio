@@ -1,0 +1,148 @@
+.home2Container {
+  background-color: rgb(16, 0, 31);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  padding-top: 1rem;
+}
+.home2Container .leftContent {
+  width: 70%;
+  padding: 0 5rem;
+}
+.home2Container .leftContent .leftHeading {
+  text-align: center;
+  padding-bottom: 3rem;
+  font-weight: 500;
+}
+.leftHeading .intro {
+  color: rgb(201, 98, 248);
+  font-weight: 300;
+  font-size: 2.5rem;
+}
+.home2Container .leftContent .leftInfo {
+  padding: 1.5rem 0;
+  font-weight: 400;
+  font-size: 18px;
+}
+.clrTxt {
+  color: rgb(201, 98, 248);
+  font-style: italic;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.home2Container .rightContent {
+  width: 30%;
+  text-align: center;
+  padding-right: 2rem;
+}
+.connect .findMe {
+  width: 100%;
+  text-align: center;
+}
+.connect {
+  padding-top: 5rem;
+}
+.socialList {
+  display: flex;
+  justify-content: center;
+}
+.socialList li {
+  list-style: none;
+  border-radius: 50%;
+  margin: 1rem;
+  background-color: #fff;
+  font-size: 20px;
+  padding: 7px 10px;
+  transition: 0.3s;
+}
+.socialList li a {
+  color: rgb(201, 98, 248);
+}
+.socialIcons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.connect .findMe h1 {
+  color: #fff;
+  font-weight: 300;
+  font-size: 2rem;
+}
+.connect .findMe p {
+  color: #fff;
+}
+.socialList {
+  color: #fff;
+  margin: 0.5rem 0;
+}
+.socialList li a:hover {
+  color: #000;
+}
+
+/* Ressponsive  */
+
+@media screen and (max-width: 922px) {
+  .leftHeading .intro {
+    font-size: 1.5rem;
+  }
+  .home2Container .leftContent .leftHeading {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 690px) {
+  .home2Container {
+    flex-direction: column;
+  }
+  .home2Container .leftContent {
+    width: 100%;
+    padding: 0 5rem;
+  }
+  .home2Container .leftContent .leftInfo {
+    padding: 1.5rem 0;
+    font-size: 15px;
+  }
+  .clrTxt {
+    font-weight: 600;
+    font-size: 15px;
+  }
+  .home2Container .rightContent {
+    width: 100%;
+    text-align: center;
+    padding-right: 0;
+  }
+  .home2Container .leftContent {
+    width: 100%;
+    padding: 0 3rem;
+  }
+}
+
+@media screen and (max-width: 830px) {
+  .home2Container .leftContent {
+    width: 100%;
+    padding: 0 2rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .home2Container .leftContent .leftHeading {
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .leftHeading .intro {
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .home2Container .leftContent .leftInfo {
+    padding: 1.5rem 0;
+    font-size: 15px;
+    font-weight: 200;
+  }
+  .clrTxt {
+    font-weight: 400;
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 1054px) {
+}

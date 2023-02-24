@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+
+.navContainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 0;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 9;
+  background-color: rgb(15, 1, 31);
+}
+.reactNavIcons {
+  color: #fff;
+  font-size: 1.2rem;
+}
+.navContainer.bg {
+  backdrop-filter: blur(8px);
+  transition: 0.8s;
+  background-color: rgba(62, 15, 109, 0.073);
+}
+.navContainer h2 {
+  padding: 0 20px;
+  text-decoration: none;
+  color: rgb(201, 98, 248);
+  font-weight: 900;
+  text-decoration: none;
+  font-family: "Dancing Script", cursive;
+}
+.navUl {
+  display: flex;
+}
+.navUl li {
+  list-style: none;
+  padding: 0 4rem;
+  display: flex;
+}
+.navUl li a {
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  text-decoration: none;
+  color: #fff;
+}
+
+.hamBurger {
+  display: none;
+}
+
+/* NavBar responsive code  */
+
+@media screen and (max-width: 1045px) {
+  .navUl {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -3;
+    transition: 0.8s;
+    padding-top: 5rem;
+    backdrop-filter: blur(80px);
+  }
+  .navContainer {
+    padding: 0;
+  }
+  .navContainer h2 {
+    font-size: 15px;
+
+    text-decoration: none;
+    font-weight: 500;
+  }
+  .wave {
+    font-size: 10px;
+  }
+  .navUl.active {
+    left: -100%;
+  }
+  .navUl li {
+    padding: 2rem 0;
+  }
+  .navUl li a {
+    font-size: 20px;
+    text-decoration: none;
+    color: #fff;
+  }
+  .hamBurger {
+    padding: 10px 10px;
+    display: initial;
+  }
+}
