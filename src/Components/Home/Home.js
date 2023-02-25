@@ -32,6 +32,7 @@ const Home = () => {
                                     color: 'rgb(201, 98, 248)',
                                     fontWeight: 500,
                                     fontSize: '1.3em',
+                                    
                                 }}
                                 startDelay={500}
                                 cursorColor="rgb(201, 98, 248)"

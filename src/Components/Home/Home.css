@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 .homeContainer {
   width: 100%;
   background-color: rgb(16, 0, 31);
@@ -22,6 +22,8 @@
 .name {
   padding-left: 15px;
   color: rgb(201, 98, 248);
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
 }
 .wave {
   font-size: 2.5rem;
@@ -114,7 +116,7 @@ h3 {
   }
   .home-img-container {
     width: 100%;
-    padding-top: 2rem;
+    /* padding-top: 2rem; */
     text-align: center;
   }
   .home-img-container img {
@@ -128,7 +130,8 @@ h3 {
   .typeWriterContainer h1,
   h3 {
     font-size: 1rem;
-    font-weight: 400;
+    font-weight: 900;
+    font-family: 'Roboto';
   }
   .wrapBox {
     padding: 2rem 0;
@@ -139,7 +142,7 @@ h3 {
     padding-left: 1rem;
   }
   .wrapBox {
-    padding: 2rem 0;
+    padding: 1rem 0;
   }
 }
 @media screen and (max-width: 380px) {

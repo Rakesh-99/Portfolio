@@ -34,7 +34,7 @@ const About = () => (
                 </div>
 
                 <div className="quote">
-                    <p>"Strive to build things that make a difference!"</p>
+                    <p style={{fontStyle:'italic'}}>"Time flies, Do it now or regret later. It's all in your hand !"</p>
                     <span className='name'>~Rakesh</span>
                 </div>
             </div>

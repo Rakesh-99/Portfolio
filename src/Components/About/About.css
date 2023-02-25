@@ -67,12 +67,11 @@
 @media screen and (max-width: 360px) {
   .aboutInfo {
     flex-direction: column;
+    padding: 3rem 1.5rem;
+
   }
   .aboutInfo .aboutLeftInfo {
     width: 100%;
-  }
-  .aboutInfo {
-    padding: 3rem 1.5rem;
   }
   .aboutInfo .aboutRightInfo {
     width: 100%;
