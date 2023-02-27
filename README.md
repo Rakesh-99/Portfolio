@@ -2,9 +2,6 @@
   Portfolio Website - v1.0<br/>
   <a href="https://react-personal-portfolio-coral.vercel.app/" target="_blank">Rakesh.tech</a>
 </h2>
-<div align="center">
-  <img alt="Demo" src="./Images/readme-img1.png" />
-</div>
 
 <br/>
 
