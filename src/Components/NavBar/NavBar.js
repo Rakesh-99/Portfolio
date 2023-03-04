@@ -64,7 +64,7 @@ const NavBar = () => {
 
                 <li>
                     <span className='reactNavIcons gitBranch'>
-                        <Link to={'https://github.com/Rakesh-99/React-Personal-Portfolio-'}> <GoGitBranch/> <AiFillStar/> </Link>
+                        <Link to={'https://github.com/Rakesh-99/React-Personal-Portfolio-'}> <GoGitBranch /> <AiFillStar /> </Link>
                     </span>
                 </li>
             </ul>
