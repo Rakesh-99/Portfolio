@@ -34,17 +34,20 @@
   transition: 0.8s;
   background-color: rgba(62, 15, 109, 0.073);
 }
+.navContainer a {
+  text-decoration: none;
+}
 .navContainer h2 {
   padding: 0 20px;
   text-decoration: none;
   color: rgb(201, 98, 248);
   font-weight: 900;
-  font-family: "Dancing Script", cursive;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode";
 }
 
 .navUl {
   display: flex;
-  background-color: rgb(15, 1, 31);
 }
 .navUl li {
   list-style: none;
@@ -53,10 +56,15 @@
 }
 .navUl li a {
   text-decoration: none;
-  font-size: 1rem;
-  font-weight: 500;
+  font-size: 0.9rem;
+  font-weight: 100;
   text-decoration: none;
   color: #fff;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode";
+}
+.navUl li a :hover {
+  color: rgb(153, 235, 19);
 }
 
 .hamBurger {
@@ -85,7 +93,7 @@
     padding: 0;
   }
   .navContainer h2 {
-    font-size: 15px;
+    font-size: 20px;
 
     text-decoration: none;
     font-weight: 500;

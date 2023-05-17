@@ -109,6 +109,11 @@ h3 {
     padding-left: 5rem;
     display: flex;
   }
+  @media screen and (max-width: 500px) {
+    .wave {
+      font-size: 1.8rem;
+    }
+  }
   .typeWriterContainer h1,
   h3 {
     font-size: 1.5rem;
@@ -131,10 +136,13 @@ h3 {
   h3 {
     font-size: 1rem;
     font-weight: 900;
-    font-family: 'Roboto';
+    font-family: "Roboto";
   }
   .wrapBox {
     padding: 2rem 0;
+  }
+  .wave {
+    font-size: 1.4rem;
   }
 }
 @media screen and (max-width: 315px) {

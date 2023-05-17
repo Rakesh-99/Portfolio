@@ -1,9 +1,6 @@
 import ProjectImg1 from '../Assets/Project1.png';
 import ProjectImg2 from '../Assets/Project2.png';
-import ProjectImg3 from '../Assets/Project3.png';
-import ProjectImg4 from '../Assets/Project4.png';
-import ProjectImg5 from '../Assets/Project5.png';
-import ProjectImg6 from '../Assets/Project6.png';
+
 
 
 
