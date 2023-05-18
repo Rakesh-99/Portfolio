@@ -14,7 +14,7 @@ const ProjectCard = (props) => {
                 <h3 className='projectTitle'>{props.projectTitle}</h3>
                 <p className='aboutProject'>{props.aboutProject}</p>
                 <div className="navLinks">
-                    <NavLink to={props.url1}>Demo</NavLink>
+                    <NavLink to={props.url1}>Preview</NavLink>
                     <NavLink to={props.url2}>Source</NavLink>
                 </div>
             </div>
@@ -23,4 +23,4 @@ const ProjectCard = (props) => {
     )
 }
 
-export default ProjectCard
+export default ProjectCard;
