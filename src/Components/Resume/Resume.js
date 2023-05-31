@@ -37,7 +37,7 @@ const Resume = () => {
                     interactivity: {
                         events: {
                             onClick: {
-                                enable: true,
+                                enable: false,
                                 mode: "push",
                             },
                             onHover: {
@@ -58,26 +58,26 @@ const Resume = () => {
                     },
                     particles: {
                         color: {
-                            value: "#ffffff",
+                            value: "#fff",
                         },
                         links: {
                             color: "#ffffff",
                             distance: 150,
                             enable: false,
-                            opacity: 0.5,
+                            opacity: 0.9,
                             width: 1,
                         },
                         collisions: {
                             enable: true,
                         },
                         move: {
-                            direction: "none",
+                            direction: 'none',
                             enable: true,
                             outModes: {
-                                default: "bounce",
+                                default: 'bounce',
                             },
                             random: false,
-                            speed: 0.2,
+                            speed: 0.1,
                             straight: false,
                         },
                         number: {
@@ -88,13 +88,13 @@ const Resume = () => {
                             value: 80,
                         },
                         opacity: {
-                            value: 0.5,
+                            value: 0.7,
                         },
                         shape: {
                             type: "circle",
                         },
                         size: {
-                            value: { min: 1, max: 1.7 },
+                            value: { min: 1, max: 1 },
                         },
                     },
                     detectRetina: true,
