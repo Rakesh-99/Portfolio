@@ -33,7 +33,7 @@ const NavBar = () => {
 
 
             <Link to={'/'}>
-                <h2>Rakesh</h2>
+                <h2>RakeshWebDev</h2>
             </Link>
 
             <ul className={click ? 'navUl active' : 'navUl'}>
