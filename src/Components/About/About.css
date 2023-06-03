@@ -68,7 +68,6 @@
   .aboutInfo {
     flex-direction: column;
     padding: 3rem 1.5rem;
-
   }
   .aboutInfo .aboutLeftInfo {
     width: 100%;
@@ -104,6 +103,22 @@
     width: 100%;
   }
 }
+.about-me {
+  width: 100%;
+  padding: 1rem 7rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: justify;
+}
+.about-me p {
+  margin: 1rem 0;
+  font-size: 17px;
+}
+.about-me .colored-text {
+  color: rgb(201, 98, 248);
+  font-weight: 600;
+}
 @media screen and (max-width: 950px) {
   .aboutInfo {
     flex-direction: column;
@@ -119,14 +134,24 @@
     width: 80%;
   }
 }
+@media screen and (max-width: 685px) {
+  .about-me {
+    padding: 1rem 5rem;
+  }
+}
 @media screen and (max-width: 510px) {
   .aboutInfo {
     padding: 9rem 2rem;
+  }
+  .about-me {
+    padding: 1rem 3rem;
+  }
+  .about-me p {
+    font-size: 15px;
   }
 }
 @media screen and (max-width: 410px) {
   .aboutLeftInfo .myInfo {
     font-size: 14px;
   }
-
 }

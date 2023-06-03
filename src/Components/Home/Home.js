@@ -42,8 +42,7 @@ const Home = () => {
 
                                 multiText={[
                                     'Student',
-                                    'Java Developer',
-                                    'Mern Stack Developer'
+                                    'Front-End Developer',
                                 ]}
                                 multiTextDelay={2000}
                                 typeSpeed={100}
