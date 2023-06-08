@@ -27,6 +27,7 @@
   color: rgb(255, 0, 0);
   font-weight: 900;
   font-style: italic;
+  font-size: 12px;
 }
 .inputContainer form {
   padding: 1rem;
@@ -84,7 +85,17 @@
   font-size: 15px;
   box-shadow: 1px 1px 50px 1px greenyellow;
   border-radius: 10px;
-  transition: 0.4s;
+  transition: 1s;
+}
+.contact-info .toastMsgContainerError {
+  border: 1px solid red;
+  padding: 1rem;
+  color: red;
+  font-weight: 900;
+  font-size: 15px;
+  box-shadow: 1px 1px 50px 1px red;
+  border-radius: 10px;
+  transition: 1s;
 }
 .contact-info .contactIcon {
   border-radius: 5px;

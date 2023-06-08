@@ -86,9 +86,10 @@ const Contact = () => {
                 <div className="contact-info">
                     {
 
-                        (Object.keys(error).length === 0 && isSubmit === true) ? <div className='toastNotifier'><span className='toastMsgContainer'>Message has been sent Successfully</span></div> : <></>
+                        (Object.keys(error).length === 0 && isSubmit === true) ? <div className='toastNotifier'><span className='toastMsgContainer'>Message has been sent Successfully</span></div> : (Object.keys(error).length !== 0 && isSubmit === true) ? <div className='toastNotifier'><span className='toastMsgContainerError'>Filled the respective field first</span></div> : <></>
 
                     }
+                    
                     <div className="contact-title">
                         <h1>Let's have a conversation</h1>
                     </div>
