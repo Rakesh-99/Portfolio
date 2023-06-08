@@ -23,6 +23,11 @@
   display: flex;
   justify-content: center;
 }
+.inputContainer .error {
+  color: rgb(255, 0, 0);
+  font-weight: 900;
+  font-style: italic;
+}
 .inputContainer form {
   padding: 1rem;
   display: flex;
@@ -36,7 +41,7 @@
 }
 .inputContainer form input {
   width: 400px;
-  margin: 1rem 0;
+  margin: 10px 0;
   transition: 0.3s;
   padding: 10px;
   border-radius: 5px;
@@ -65,6 +70,21 @@
   border-radius: 3px;
   border-color: rgb(201, 98, 248);
   cursor: pointer;
+  margin-top: 10px;
+}
+
+.contact-info .toastNotifier {
+  text-align: center;
+}
+.contact-info .toastMsgContainer {
+  border: 1px solid yellowgreen;
+  padding: 1rem;
+  color: yellowgreen;
+  font-weight: 900;
+  font-size: 15px;
+  box-shadow: 1px 1px 50px 1px greenyellow;
+  border-radius: 10px;
+  transition: 0.4s;
 }
 .contact-info .contactIcon {
   border-radius: 5px;
@@ -113,7 +133,6 @@
   .contact-info .contactIcon {
     font-size: 2.5rem;
   }
-  
 }
 @media screen and (max-width: 367px) {
   .inputContainer form {
