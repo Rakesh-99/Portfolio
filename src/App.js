@@ -5,8 +5,8 @@ import About from './Components/About/About';
 import Project from './Components/Projects/Project';
 import Resume from './Components/Resume/Resume';
 import Blog from './Components/Blog/Blog';
-import Contact from './Components/Contact/Contact'
 import PageNotFound from './Components/404Page/PageNotFound';
+import Contact from './Components/Contact/Contact';
 
 import './Style/App.css';
 
@@ -22,8 +22,8 @@ const App = () => {
                     <Route path='/Project' element={<Project />} />
                     <Route path='/resume' element={<Resume />} />
                     <Route path='blog' element={<Blog />} />
-                    <Route path='contact' element={<Contact />} />
-                    <Route path='*' element={<PageNotFound/>}/>
+                    <Route path='*' element={<PageNotFound />} />
+                    <Route path='/contact' element={<Contact />} />
                 </Routes>
             </BrowserRouter>
         </div>

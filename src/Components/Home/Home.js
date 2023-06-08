@@ -37,12 +37,13 @@ const Home = () => {
                                     fontSize: '1.3em',
 
                                 }}
-                                startDelay={500}
+                                startDelay={100}
                                 cursorColor="rgb(201, 98, 248)"
 
                                 multiText={[
                                     'Student',
-                                    'Front-End Developer',
+                                    'Front-end Developer',
+
                                 ]}
                                 multiTextDelay={2000}
                                 typeSpeed={100}

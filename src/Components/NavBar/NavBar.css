@@ -14,8 +14,11 @@
 }
 .reactNavIcons {
   color: #fff;
-  font-size: 1.2rem;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
 }
+
 .reactNavIcons.gitBranch {
   border: 1px solid #fff;
   padding: 4px 20px;
@@ -48,11 +51,15 @@
 
 .navUl {
   display: flex;
+  align-items: center;
 }
 .navUl li {
   list-style: none;
   padding: 0 1.5rem;
   display: flex;
+}
+.navUl li a:hover {
+  color: blueviolet;
 }
 .navUl li a {
   text-decoration: none;
@@ -115,5 +122,14 @@
   .hamBurger {
     padding: 10px 10px;
     display: initial;
+  }
+}
+@media screen and (max-width: 500px) {
+  .navUl li a {
+    font-size: 15px;
+  }
+  .navTitle h2{
+    font-size: 15px;
+    font-weight: 900;
   }
 }

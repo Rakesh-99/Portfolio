@@ -8,14 +8,14 @@ const ProjectCardData = [
     {
         imgSrc: ProjectImg1,
         projectTitle: 'React Portfolio',
-        aboutProject: 'This is my React personal portfolio site built using React Js.',
+        aboutProject: 'Personal portfolio website built using React Js.',
         url1: 'https://react-personal-portfolio-coral.vercel.app/',
         url2: 'https://github.com/Rakesh-99/React-Personal-Portfolio-'
     },
     {
         imgSrc: ProjectImg2,
         projectTitle: 'Ecommerce website',
-        aboutProject: 'Frontend ecommerce multi page website built using vanilla JavaScript. ',
+        aboutProject: 'Frontend ecommerce multi page website built using HTML5,CSS3 and,JavaScript. ',
         url1: 'https://rakesh-99.github.io/FrontEnd-Ecommerce-Project/',
         url2: 'https://github.com/Rakesh-99/FrontEnd-Ecommerce-Project'
     },

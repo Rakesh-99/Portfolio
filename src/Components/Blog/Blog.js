@@ -12,7 +12,7 @@ const Blog = () => {
             <Particle />
 
             <NavBar />
-            <p style={{ textAlign: 'center' }}>This page is under development</p>
+            <p style={{ height: '100vh', width: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>This page is under development</p>
         </>
     )
 }

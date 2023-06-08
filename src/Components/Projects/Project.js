@@ -42,6 +42,8 @@ const Project = () => {
                     })
                 }
             </div>
+            
+
             <Footer />
         </>
     )

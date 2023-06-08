@@ -18,3 +18,13 @@
   text-align: center;
   margin-top: -4rem;
 }
+.button-more{
+  padding: 10px 20px;
+  background-color: rgb(201, 98, 248);
+  color: #fff;
+  border-radius: 4px;
+  border: none;
+  text-align: center;
+  cursor: pointer;
+}
+

@@ -2,12 +2,11 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './NavBar.css';
 import { BsPerson } from "react-icons/bs";
-import { AiOutlineFundProjectionScreen, AiOutlineHome } from "react-icons/ai";
-import { FaBars, FaTimes } from 'react-icons/fa';
-import { MdOutlineLibraryBooks } from 'react-icons/md';
-import { FaBlog } from 'react-icons/fa'
-import { AiFillStar } from 'react-icons/ai';
+import { AiOutlineFundProjectionScreen, AiOutlineHome, AiFillStar } from "react-icons/ai";
+import { FaBars, FaTimes, FaBlog } from 'react-icons/fa';
+import { MdOutlineLibraryBooks, MdOutlineConnectWithoutContact } from 'react-icons/md';
 import { GoGitBranch } from 'react-icons/go';
+
 
 const NavBar = () => {
 
@@ -32,8 +31,8 @@ const NavBar = () => {
         <div className={color ? 'navContainer bg' : 'navContainer'}>
 
 
-            <Link to={'/'}>
-                <h2>RakeshWebDev</h2>
+            <Link to={'/'} className='navTitle'>
+                <h2>Rakesh Ku. Parida</h2>
             </Link>
 
             <ul className={click ? 'navUl active' : 'navUl'}>
@@ -60,6 +59,11 @@ const NavBar = () => {
                 <li>
                     <span className='reactNavIcons'> <FaBlog /> </span>
                     <Link to={'/blog'}>Blog</Link>
+                </li>
+
+                <li>
+                    <span className='reactNavIcons'> <MdOutlineConnectWithoutContact /> </span>
+                    <Link to={'/contact'}>Contact</Link>
                 </li>
 
                 <li>
