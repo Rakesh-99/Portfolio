@@ -39,6 +39,7 @@
   box-shadow: 1px 1px 20rem 1px rgb(201, 98, 248);
   border-radius: 0.5rem;
   margin-top: 3rem;
+  height: 500px;
 }
 .inputContainer form input {
   width: 400px;
@@ -84,7 +85,7 @@
   font-weight: 900;
   font-size: 15px;
   box-shadow: 1px 1px 50px 1px greenyellow;
-  border-radius: 10px;
+  border-radius: 5px;
   transition: 1s;
 }
 .contact-info .toastMsgContainerError {
@@ -94,7 +95,7 @@
   font-weight: 900;
   font-size: 15px;
   box-shadow: 1px 1px 50px 1px red;
-  border-radius: 10px;
+  border-radius: 5px;
   transition: 1s;
 }
 .contact-info .contactIcon {
@@ -143,6 +144,9 @@
   }
   .contact-info .contactIcon {
     font-size: 2.5rem;
+  }
+  .contact-info .toastMsgContainer {
+    font-size: 12px;
   }
 }
 @media screen and (max-width: 367px) {
