@@ -1,22 +1,25 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import NavBar from '../NavBar/NavBar';
 import Footer from '../Footer/Footer';
-// import './Contact.css';
 import Particle from '../Particles/Particle';
 import './Contact.css';
 import { FcBusinessContact } from 'react-icons/fc';
+import emailjs from '@emailjs/browser';
+
 
 
 
 const Contact = () => {
 
+    const form = useRef();
+
     const [error, setError] = useState({});
     const [isSubmit, setIsSubmit] = useState(false);
 
     const [values, setValues] = useState({
-        username: '',
-        email: '',
-        subject: ''
+        user_name: '',
+        user_email: '',
+        message: ''
     });
 
 
@@ -29,37 +32,42 @@ const Contact = () => {
         e.preventDefault();
         setError(validation(values));
         setIsSubmit(true);
+
+
+        // user_email Js Config  :
+
+
     };
 
     const validation = (values) => {
         const regex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
         const err = {};
 
-        // Username validation : 
+        // user_name validation : 
 
-        if (!values.username) {
-            err.username = '*Username is required';
-        } else if (values.username.length < 2) {
-            err.username = '*Username can not be less than 2 char';
-        } else if (values.username.length > 20) {
-            err.username = '*Username can not contain more than 20 char';
+        if (!values.user_name) {
+            err.user_name = '*user_name is required';
+        } else if (values.user_name.length < 2) {
+            err.user_name = '*user_name can not be less than 2 char';
+        } else if (values.user_name.length > 20) {
+            err.user_name = '*user_name can not contain more than 20 char';
         };
 
-        // Email validation : 
-        if (!values.email) {
-            err.email = '*Email field is required';
-        } else if (!regex.test(values.email)) {
-            err.email = '*Invalid email entered';
+        // user_email validation : 
+        if (!values.user_email) {
+            err.user_email = '*user_email field is required';
+        } else if (!regex.test(values.user_email)) {
+            err.user_email = '*Invalid user_email entered';
         };
 
-        // Subject validation :
+        // message validation :
 
-        if (!values.subject) {
-            err.subject = '*Subject field is required';
-        } else if (values.subject.length < 20) {
-            err.subject = '*Subject field can not be less than 10 char';
-        } else if (values.subject.length > 300) {
-            err.subject = '*Subject field can not contain more than 300 char';
+        if (!values.message) {
+            err.message = '*message field is required';
+        } else if (values.message.length < 20) {
+            err.message = '*message field can not be less than 10 char';
+        } else if (values.message.length > 300) {
+            err.message = '*message field can not contain more than 300 char';
         };
 
         return err;
@@ -69,11 +77,20 @@ const Contact = () => {
     useEffect(() => {
         if (Object.keys(error).length === 0 && isSubmit === true) {
             console.log(values);
+
+            emailjs.sendForm('service_f7gd1fx', 'template_5n08skl', form.current, 'eFn8ebkBYzQVKP219')
+                .then((result) => {
+                    console.log(result.text);
+                }, (error) => {
+                    console.log(error.text);
+                });
+
             setValues({
-                username: '',
-                email: '',
-                subject: ''
+                user_name: '',
+                user_email: '',
+                message: ''
             })
+
         }
     }, [error])
 
@@ -86,7 +103,7 @@ const Contact = () => {
                 <div className="contact-info">
                     {
 
-                        (Object.keys(error).length === 0 && isSubmit === true) ? <div className='toastNotifier'><span className='toastMsgContainer'>Thanks for reaching me out, I'll get back to you soon.</span></div> : (Object.keys(error).length !== 0 && isSubmit === true) ? <div className='toastNotifier'><span className='toastMsgContainerError'>Fill the respective fields first</span></div> : <></>
+                        (Object.keys(error).length === 0 && isSubmit === true) ? <div className='toastNotifier'><span className='toastMsgContainer'>Message has been sent successfully</span></div> : (Object.keys(error).length !== 0 && isSubmit === true) ? <div className='toastNotifier'><span className='toastMsgContainerError'>Fill the respective fields first</span></div> : <></>
 
                     }
 
@@ -95,14 +112,14 @@ const Contact = () => {
                     </div>
                     <div className="inputContainer">
 
-                        <form action="" onSubmit={submitHandle}>
+                        <form action="" onSubmit={submitHandle} ref={form}>
                             <FcBusinessContact className='contactIcon' />
-                            <input type="text" placeholder='Name' onChange={changeHandle} name='username' value={values.username} autoComplete='off' />
-                            <span className='error'>{error.username}</span>
-                            <input type="text" placeholder='Email' onChange={changeHandle} name='email' value={values.email} autoComplete='off' />
-                            <span className='error'>{error.email}</span>
-                            <input type="text" className='subject' placeholder='Subject' onChange={changeHandle} name='subject' value={values.subject} autoComplete='off' />
-                            <span className='error'>{error.subject}</span>
+                            <input type="text" placeholder='Username' onChange={changeHandle} name="user_name" value={values.user_name} autoComplete='off' />
+                            <span className='error'>{error.user_name}</span>
+                            <input type="text" placeholder='Email' onChange={changeHandle} name="user_email" value={values.user_email} autoComplete='off' />
+                            <span className='error'>{error.user_email}</span>
+                            <input type="text" className='subject' placeholder='message' onChange={changeHandle} name='message' value={values.message} autoComplete='off' />
+                            <span className='error'>{error.message}</span>
                             <button type='submit'>Send</button>
                         </form>
 
