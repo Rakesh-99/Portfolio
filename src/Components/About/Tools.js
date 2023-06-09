@@ -7,7 +7,11 @@ import {
     SiPostman,
     SiHeroku,
     SiVercel,
+    SiIntellijidea
+
 } from "react-icons/si";
+
+import { DiEclipse  } from 'react-icons/di'
 
 const Tools = () => {
 
@@ -31,7 +35,12 @@ const Tools = () => {
                 <div className="box">
                     <SiVercel />
                 </div>
-               
+                <div className="box">
+                    < DiEclipse/>
+                </div>
+                <div className="box">
+                    < SiIntellijidea />
+                </div>
             </div>
         </div>
     )

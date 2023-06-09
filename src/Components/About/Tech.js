@@ -2,20 +2,26 @@ import React from 'react';
 import '../About/Tech.css';
 
 import {
-    DiReact,
     DiJava,
     DiJavascript1,
-    DiNodejs,
+    DiReact,
+    DiJqueryLogo,
+    DiNodejs,  
     DiMongodb,
     DiGit,
     DiGithub,
     DiMysql,
-    DiJqueryLogo,
+    
 } from 'react-icons/di';
 
 import {
-    SiFirebase
+    SiFirebase,
+    SiExpress,
+    SiHtml5,
+    SiCss3
 } from 'react-icons/si';
+
+import { TbBrandBootstrap } from 'react-icons/tb'
 
 
 const Tech = () => {
@@ -31,6 +37,15 @@ const Tech = () => {
                     <DiJava />
                 </div>
                 <div className="box">
+                    <SiHtml5 />
+                </div>
+                <div className="box">
+                    <SiCss3 />
+                </div>
+                <div className="box">
+                    <TbBrandBootstrap />
+                </div>
+                <div className="box">
                     <DiJavascript1 />
                 </div>
                 <div className="box">
@@ -41,6 +56,9 @@ const Tech = () => {
                 </div>
                 <div className="box">
                     <DiNodejs />
+                </div>
+                <div className="box">
+                    <SiExpress/>
                 </div>
                 <div className="box">
                     <DiGit />
