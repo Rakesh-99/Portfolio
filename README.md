@@ -22,8 +22,9 @@ My personal portfolio <a href="https://react-personal-portfolio-coral.vercel.app
 
 This project was built using these technologies.
 
-- React.js
 - CSS3
+- React.js
+- Node.js
 - VsCode
 - Vercel
 
