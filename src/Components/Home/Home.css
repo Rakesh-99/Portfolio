@@ -128,21 +128,25 @@ h3 {
     width: 60%;
   }
 }
-@media screen and (max-width: 415px) {
+@media screen and (max-width: 425px) {
   .home-img-container img {
-    width: 80%;
-  }
-  .typeWriterContainer h1,
-  h3 {
-    font-size: 1rem;
-    font-weight: 900;
-    font-family: "Roboto";
+    width: 90%;
   }
   .wrapBox {
     padding: 2rem 0;
   }
   .wave {
     font-size: 1.4rem;
+  }
+  .wrapBox .typeWriterContainer {
+    width: 100%;
+    padding-left: 2rem;
+    display: flex;
+  }
+  .typeWriterContainer h1,
+  h3 {
+    font-size: 1.3rem;
+    font-weight: 900;
   }
 }
 @media screen and (max-width: 315px) {

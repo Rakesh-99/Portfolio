@@ -1,71 +1,69 @@
-.contactContainer {
+.controller {
   width: 100%;
-  background-color: rgb(16, 0, 31);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  display: flex;
+  flex-wrap: wrap;
   background: url("../Assets/home-bg.jpg"), rgba(0, 0, 0, 0.9);
   background-blend-mode: darken;
+  background-repeat: repeat;
+  background-position: left;
+  margin-bottom: 7rem;
 }
-.contactContainer .contact-info {
-  height: 80vh;
-  width: 100vw;
-}
-.contactContainer .contact-title {
-  text-align: center;
-  margin-top: 2rem;
-}
-.contact-title h1 {
-  color: rgb(201, 98, 248);
-  font-weight: 600;
-}
-.contact-info .inputContainer {
+.controller .rightContent {
+  width: 50%;
   display: flex;
-  justify-content: center;
+  align-items: center;
+  justify-content: start;
 }
-.inputContainer .error {
-  color: rgb(255, 0, 0);
-  font-weight: 900;
-  font-style: italic;
-  font-size: 12px;
+.controller .leftContent {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
 }
-.inputContainer form {
-  padding: 1rem;
+.leftContent .contactImg {
+  width: 80%;
+}
+
+.rightContent form {
   display: flex;
   flex-direction: column;
-  width: 500px;
   justify-content: center;
   align-items: center;
-  box-shadow: 1px 1px 20rem 1px rgb(201, 98, 248);
-  border-radius: 0.5rem;
+  border-radius: 10px;
   margin-top: 3rem;
-  height: 500px;
+  background: url("../Assets/home-bg.jpg"), rgba(0, 0, 0, 0.7);
+  background-position: bottom;
+  background-size: 50rem;
+  background-blend-mode: darken;
+  padding: 1rem;
+  width: 500px;
 }
-.inputContainer form input {
+.contactIcon {
+  border-radius: 5px;
+  border: 1px solid rgb(201, 98, 248);
+  font-size: 4rem;
+}
+.rightContent form input {
   width: 400px;
   margin: 10px 0;
-  transition: 0.3s;
   padding: 15px;
-  border-radius: 5px;
   border: none;
   outline: none;
-  border: 1px solid rgb(201, 98, 248);
   background-color: transparent;
   color: #fff;
+  border-bottom: 1px solid rgb(201, 98, 248);
+  transition: 0.5s;
+  font-size: 18px;
+}
+.rightContent form input:focus {
+  border-bottom: 4px solid rgb(201, 98, 248);
+  transition: 0.5s;
 }
 .subject {
   height: 100px;
 }
-.inputContainer form input:focus {
-  width: 420px;
-  transition: 0.3s;
-}
-.inputContainer form input:hover {
-  width: 420px;
-  transition: 0.3s;
-  border: 2px solid rgb(201, 98, 248);
-}
-.inputContainer button {
+
+.rightContent button {
   padding: 11px 4rem;
   background-color: transparent;
   color: #fff;
@@ -73,9 +71,12 @@
   border-color: rgb(201, 98, 248);
   cursor: pointer;
   margin-top: 10px;
+  box-shadow: 1px 1px 5rem 1px rgb(201, 98, 248);
 }
 
-.contact-info .toastNotifier {
+/* Toast Notifier  */
+
+.toastNotifier {
   text-align: center;
 }
 @keyframes animate {
@@ -88,8 +89,7 @@
     top: 0rem;
   }
 }
-
-.contact-info .toastMsgContainer {
+.toastMsgContainer {
   border: 1px solid yellowgreen;
   padding: 1rem;
   color: yellowgreen;
@@ -102,7 +102,7 @@
   animation-name: animate;
   animation-duration: 1s;
 }
-.contact-info .toastMsgContainerError {
+.toastMsgContainerError {
   border: 1px solid red;
   padding: 1rem;
   color: red;
@@ -116,92 +116,43 @@
   animation-duration: 1s;
   animation-iteration-count: 5s;
 }
-
-.contact-info .contactIcon {
-  border-radius: 5px;
-  border: 1px solid rgb(201, 98, 248);
-  font-size: 4rem;
+.rightContent .error {
+  color: rgb(255, 0, 0);
+  font-weight: 900;
+  font-style: italic;
+  font-size: 12px;
 }
-@media screen and (max-width: 565px) {
-  .inputContainer form {
-    box-shadow: 1px 1px 3rem 1px rgb(201, 98, 248);
-    width: 400px;
+
+@media screen and (max-width: 840px) {
+  .controller {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 2rem;
   }
-  .inputContainer form input {
+  .contactIcon {
+    font-size: 2rem;
+  }
+  .controller .leftContent {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .controller .rightContent {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .rightContent form input {
     width: 300px;
   }
-  .inputContainer form input:focus {
-    width: 310px;
-  }
-  .inputContainer form input:hover {
-    width: 310px;
-  }
-  .contact-title h1 {
-    font-size: 25px;
-  }
-  .contact-info .contactIcon {
-    font-size: 3rem;
+  .rightContent form {
+    width: 500px;
   }
 }
-
-@media screen and (max-width: 450px) {
-  .inputContainer form {
-    box-shadow: 1px 1px 2.5rem 1px rgb(201, 98, 248);
-    width: 350px;
-  }
-  .inputContainer form input {
-    width: 270px;
-  }
-  .inputContainer form input:focus {
-    width: 280px;
-  }
-  .inputContainer form input:hover {
-    width: 280px;
-  }
-  .contact-title h1 {
-    font-size: 18px;
-  }
-  .contact-info .contactIcon {
-    font-size: 2.5rem;
-  }
-  .contact-info .toastMsgContainer {
-    font-size: 12px;
-  }
-}
-@media screen and (max-width: 367px) {
-  .inputContainer form {
-    box-shadow: 1px 1px 1rem 1px rgb(201, 98, 248);
-    width: 295px;
-  }
-  .inputContainer form input {
-    width: 270px;
-  }
-  .contact-title h1 {
-    font-size: 20px;
-  }
-  .inputContainer form input:focus {
-    width: 275px;
-  }
-  .inputContainer form input:hover {
-    width: 275px;
-  }
-}
-@media screen and (max-width: 340px) {
-  .inputContainer form {
-    box-shadow: 1px 1px 1rem 1px rgb(201, 98, 248);
-    width: 270px;
-  }
-  .inputContainer form input {
-    width: 240px;
-  }
-  
-  .contact-title h1 {
-    font-size: 16px;
-  }
-  .inputContainer form input:focus {
-    width: 250px;
-  }
-  .inputContainer form input:hover {
-    width: 250px;
+@media screen and (max-width: 505px) {
+  .rightContent form {
+    width: 400px;
   }
 }

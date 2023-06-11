@@ -131,7 +131,7 @@
     margin-top: 2rem;
   }
   .aboutRightInfo img {
-    width: 80%;
+    width: 100%;
   }
 }
 @media screen and (max-width: 685px) {
@@ -150,8 +150,14 @@
     font-size: 15px;
   }
 }
-@media screen and (max-width: 410px) {
+@media screen and (max-width: 425px) {
   .aboutLeftInfo .myInfo {
     font-size: 14px;
+  }
+  .aboutInfo {
+    padding: 5rem 2rem;
+  }
+  .aboutInfo {
+    padding: 5rem 20px;
   }
 }

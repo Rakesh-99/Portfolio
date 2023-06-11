@@ -5,6 +5,7 @@ import Particle from '../Particles/Particle';
 import './Contact.css';
 import { FcBusinessContact } from 'react-icons/fc';
 import emailjs from '@emailjs/browser';
+import ContactImage from '../Assets/contact.png';
 
 
 
@@ -97,37 +98,38 @@ const Contact = () => {
     return (
 
         <>
-            <div className="contactContainer">
-                <Particle />
-                <NavBar />
-                <div className="contact-info">
-                    {
+            <Particle />
+            <NavBar />
 
-                        (Object.keys(error).length === 0 && isSubmit === true) ? <div className='toastNotifier'><span className='toastMsgContainer'>Message has been sent successfully</span></div> : (Object.keys(error).length !== 0 && isSubmit === true) ? <div className='toastNotifier'><span className='toastMsgContainerError'>Fill the respective fields first</span></div> : <></>
 
-                    }
 
-                    <div className="contact-title">
-                        <h1>Let's have a conversation</h1>
-                    </div>
-                    <div className="inputContainer">
+            {
 
-                        <form action="" onSubmit={submitHandle} ref={form}>
-                            <FcBusinessContact className='contactIcon' />
-                            <input type="text" placeholder='Username' onChange={changeHandle} name="user_name" value={values.user_name} autoComplete='off' />
-                            <span className='error'>{error.user_name}</span>
-                            <input type="text" placeholder='Email' onChange={changeHandle} name="user_email" value={values.user_email} autoComplete='off' />
-                            <span className='error'>{error.user_email}</span>
-                            <input type="text" className='subject' placeholder='message' onChange={changeHandle} name='message' value={values.message} autoComplete='off' />
-                            <span className='error'>{error.message}</span>
-                            <button type='submit'>Send</button>
-                        </form>
+                (Object.keys(error).length === 0 && isSubmit === true) ? <div className='toastNotifier'><span className='toastMsgContainer'>Message has been sent successfully</span></div> : (Object.keys(error).length !== 0 && isSubmit === true) ? <div className='toastNotifier'><span className='toastMsgContainerError'>Fill the respective fields first</span></div> : <></>
 
-                    </div>
+            }
+            <div className='controller'>
+
+                <div className='leftContent'>
+                    <img className='contactImg' src={ContactImage} alt="conatcImg" />
                 </div>
-                <Footer />
-            </div>
 
+                <div className="rightContent">
+
+                    <form action="" onSubmit={submitHandle} ref={form}>
+                        <FcBusinessContact className='contactIcon' />
+                        <input type="text" placeholder='Username' onChange={changeHandle} name="user_name" value={values.user_name} autoComplete='off' />
+                        <span className='error'>{error.user_name}</span>
+                        <input type="text" placeholder='Email' onChange={changeHandle} name="user_email" value={values.user_email} autoComplete='off' />
+                        <span className='error'>{error.user_email}</span>
+                        <input type="text" className='subject' placeholder='message' onChange={changeHandle} name='message' value={values.message} autoComplete='off' />
+                        <span className='error'>{error.message}</span>
+                        <button type='submit'>Send</button>
+                    </form>
+                </div>
+
+            </div>
+            <Footer />
         </>
     )
 }
