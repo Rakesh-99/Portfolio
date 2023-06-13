@@ -45,10 +45,23 @@
   padding: 0 10px;
 }
 .card .aboutProject {
-  margin: 1rem 0;
   font-size: 15px;
-  padding: 0 10px;
+  padding: 0 20px;
+  text-align: justify;
 }
 
 /* Responsive  */
 
+@media screen and (max-width: 834px) {
+  .card .imgContainer {
+    width: 80%;
+  }
+  .projectCard {
+    width: 350px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .card .imgContainer {
+    width: 70%;
+  }
+}
