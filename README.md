@@ -1,6 +1,6 @@
 <h2 align="center">
   Portfolio Website - v1.0<br/>
-  <a href="https://react-personal-portfolio-coral.vercel.app/" target="_blank">Rakesh Kumar Parida</a>
+  <a href="https://rakesh-ku-parida.vercel.app/" target="_blank">Rakesh Kumar Parida</a>
 </h2>
 
 <br/>
