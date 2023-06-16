@@ -1,5 +1,4 @@
 import React, { useState, useEffect, useRef } from 'react';
-import NavBar from '../NavBar/NavBar';
 import Footer from '../Footer/Footer';
 import Particle from '../Particles/Particle';
 import './Contact.css';
@@ -99,8 +98,6 @@ const Contact = () => {
 
         <>
             <Particle />
-            <NavBar />
-
 
 
             {

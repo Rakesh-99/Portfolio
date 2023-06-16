@@ -1,12 +1,10 @@
 import React from 'react';
 import './PageNotFound.css';
-import NavBar from '../NavBar/NavBar';
 
 const PageNotFound = () => {
 
     return (
         <>
-            <NavBar/>
             <div className='pageNotFound'>
                 <div className="leftContent">
                     <span className='num404'>404 |</span>

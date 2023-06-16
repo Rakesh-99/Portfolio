@@ -1,5 +1,4 @@
 import React from 'react';
-import NavBar from '../NavBar/NavBar'
 import '../About/About.css';
 import aboutImg from '../Assets/about.png'
 import { FaRegHandPointRight } from 'react-icons/fa'
@@ -14,18 +13,12 @@ import Particle from '../Particles/Particle';
 
 const About = () => {
 
-    //  React ts-particles :
-
-
-
 
     return (
 
         <div className='aboutContainer'>
 
             <Particle />
-
-            <NavBar />
 
             <div className="aboutInfo">
 

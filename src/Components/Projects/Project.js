@@ -1,5 +1,4 @@
 import React from 'react';
-import NavBar from '../NavBar/NavBar';
 import ProjectCard from './ProjectCard';
 import '../Projects/Project.css';
 import ProjectCardData from './ProjectCardData';
@@ -15,9 +14,6 @@ const Project = () => {
     return (
         <>
             <Particle />
-
-            <NavBar />
-
 
             <div className='projectInfo'>
                 <h1>Projects</h1>

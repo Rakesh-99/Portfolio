@@ -1,5 +1,4 @@
 import React from 'react';
-import NavBar from '../NavBar/NavBar';
 import '../Home/Home.css';
 import TypeWriterEffect from 'react-typewriter-effect';
 import homeImg from '../Assets/homeImg.png'
@@ -11,16 +10,11 @@ import Particle from '../Particles/Particle';
 const Home = () => {
 
 
-
-
     return (
 
         <div className='homeContainer'>
 
             <Particle />
-
-            <NavBar />
-
 
             {/*-------------------TypeWriter----------------------------*/}
             <div className="wrapBox">
