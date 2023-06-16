@@ -6,6 +6,7 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  padding: 3rem;
 }
 
 .projectContainer .work {
@@ -28,14 +29,19 @@
   cursor: pointer;
 }
 
+@media screen and (max-width: 1288px) {
+  .projectContainer {
+    padding: 3rem 0;
+  }
+}
 @media screen and (max-width: 1199px) {
   .projectContainer {
-    padding: 6rem;
+    padding: 3rem 6rem;
   }
 }
 @media screen and (max-width: 996px) {
   .projectContainer {
-    padding: 3rem;
+    padding: 3rem 1rem; 
   }
 }
 @media screen and (max-width: 895px) {

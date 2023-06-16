@@ -112,7 +112,7 @@
     left: -100%;
   }
   .navUl li {
-    padding: 2rem 0;
+    padding: 1rem 0;
   }
   .navUl li a {
     font-size: 20px;
@@ -128,7 +128,7 @@
   .navUl li a {
     font-size: 15px;
   }
-  .navTitle h2{
+  .navTitle h2 {
     font-size: 15px;
     font-weight: 900;
   }

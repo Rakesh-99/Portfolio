@@ -17,7 +17,7 @@ const Resume = () => {
             <div className="mainResumeContainer">
                 <div className="resumeContainer">
                     <p>Download Resume</p>
-                    <a href="../Assests/RakeshKumarParidaResume.pdf" download={'RakeshKumarParidaResume.pdf'}>
+                    <a href="../Assets/RakeshKumarParida.pdf" download={'RakeshKumarParida.pdf'}>
                         <button>Resume</button>
                     </a>
                 </div>
