@@ -1,6 +1,6 @@
 <h2 align="center">
   Portfolio Website - v1.0<br/>
-  <a href="https://react-personal-portfolio-coral.vercel.app/" target="_blank">Rakesh Kumar Parida</a>
+  <a href="https://rakesh-ku-parida.vercel.app/" target="_blank">Rakesh Kumar Parida</a>
 </h2>
 
 <br/>
@@ -12,7 +12,7 @@
 
 ## Built With
 
-My personal portfolio <a href="https://react-personal-portfolio-coral.vercel.app/" target="_blank">Rakesh Kumar Parida</a> which features some of my github projects as well as my resume and technical skills.<br/>
+My personal portfolio <a href="https://rakesh-ku-parida.vercel.app/" target="_blank">Rakesh Kumar Parida</a> which features some of my github projects as well as my resume and technical skills.<br/>
 
 This project was built using these technologies.
 
