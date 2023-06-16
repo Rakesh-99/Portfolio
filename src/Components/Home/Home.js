@@ -4,6 +4,7 @@ import TypeWriterEffect from 'react-typewriter-effect';
 import homeImg from '../Assets/homeImg.png'
 import Home2 from './Home2';
 import Particle from '../Particles/Particle';
+import ScrollTop from '../ScrollTop/ScrollTop';
 
 
 
@@ -15,9 +16,11 @@ const Home = () => {
         <div className='homeContainer'>
 
             <Particle />
+            <ScrollTop />
 
             {/*-------------------TypeWriter----------------------------*/}
             <div className="wrapBox">
+
 
                 <div className="typeWriterContainer">
                     <h1 style={{ color: '#fff' }}> Hi There! <span className='wave'>👋</span>

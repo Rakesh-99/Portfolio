@@ -7,6 +7,7 @@ import Tools from './Tools'
 import Github from './Github';
 import Footer from '../Footer/Footer'
 import Particle from '../Particles/Particle';
+import ScrollTop from '../ScrollTop/ScrollTop';
 
 
 
@@ -19,6 +20,7 @@ const About = () => {
         <div className='aboutContainer'>
 
             <Particle />
+            <ScrollTop />
 
             <div className="aboutInfo">
 

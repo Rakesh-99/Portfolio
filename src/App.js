@@ -8,8 +8,6 @@ import Resume from './Components/Resume/Resume';
 import Blog from './Components/Blog/Blog';
 import PageNotFound from './Components/404Page/PageNotFound';
 import Contact from './Components/Contact/Contact';
-import ScrollTop from './Components/ScrollTop/ScrollTop';
-
 
 import './Style/App.css';
 
@@ -18,9 +16,9 @@ const App = () => {
 
     return (
         <div className='appContainer'>
+
             <Router>
                 <NavBar />
-                <ScrollTop />
                 <Routes>
                     <Route path='/' element={<Home />} />
                     <Route path='/about' element={<About />} />

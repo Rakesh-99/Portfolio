@@ -4,6 +4,7 @@ import '../Projects/Project.css';
 import ProjectCardData from './ProjectCardData';
 import Footer from '../Footer/Footer';
 import Particle from '../Particles/Particle';
+import ScrollTop from '../ScrollTop/ScrollTop';
 
 const Project = () => {
 
@@ -14,7 +15,7 @@ const Project = () => {
     return (
         <>
             <Particle />
-
+            <ScrollTop />
             <div className='projectInfo'>
                 <h1>Projects</h1>
                 <p>Here are a few Projects I'have worked on recently</p>
@@ -38,7 +39,7 @@ const Project = () => {
                     })
                 }
             </div>
-            
+
 
             <Footer />
         </>

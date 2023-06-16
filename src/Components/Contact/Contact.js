@@ -5,6 +5,7 @@ import './Contact.css';
 import { FcBusinessContact } from 'react-icons/fc';
 import emailjs from '@emailjs/browser';
 import ContactImage from '../Assets/contact.png';
+import ScrollTop from '../ScrollTop/ScrollTop';
 
 
 
@@ -98,7 +99,7 @@ const Contact = () => {
 
         <>
             <Particle />
-
+            <ScrollTop />
 
             {
 

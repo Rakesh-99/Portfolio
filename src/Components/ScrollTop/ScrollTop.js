@@ -10,6 +10,6 @@ const ScrollTop = () => {
         window.scrollTo(0, 0);
     }, [path]);
     return null;
-};
+}
 
 export default ScrollTop;
