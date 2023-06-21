@@ -1,6 +1,5 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import NavBar from './Components/NavBar/NavBar';
 import Home from './Components/Home/Home';
 import About from './Components/About/About';
 import Project from './Components/Projects/Project';
@@ -18,7 +17,6 @@ const App = () => {
         <div className='appContainer'>
 
             <Router>
-                <NavBar />
                 <Routes>
                     <Route path='/' element={<Home />} />
                     <Route path='/about' element={<About />} />

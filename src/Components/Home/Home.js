@@ -5,6 +5,7 @@ import homeImg from '../Assets/homeImg.png'
 import Home2 from './Home2';
 import Particle from '../Particles/Particle';
 import ScrollTop from '../ScrollTop/ScrollTop';
+import NavBar from '../NavBar/NavBar';
 
 
 
@@ -15,6 +16,7 @@ const Home = () => {
 
         <div className='homeContainer'>
 
+            <NavBar />
             <Particle />
             <ScrollTop />
 

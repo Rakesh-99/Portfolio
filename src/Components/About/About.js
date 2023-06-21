@@ -8,7 +8,7 @@ import Github from './Github';
 import Footer from '../Footer/Footer'
 import Particle from '../Particles/Particle';
 import ScrollTop from '../ScrollTop/ScrollTop';
-
+import NavBar from '../NavBar/NavBar';
 
 
 
@@ -19,6 +19,7 @@ const About = () => {
 
         <div className='aboutContainer'>
 
+            <NavBar />
             <Particle />
             <ScrollTop />
 

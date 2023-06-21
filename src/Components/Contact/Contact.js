@@ -6,6 +6,7 @@ import { FcBusinessContact } from 'react-icons/fc';
 import emailjs from '@emailjs/browser';
 import ContactImage from '../Assets/contact.png';
 import ScrollTop from '../ScrollTop/ScrollTop';
+import NavBar from '../NavBar/NavBar';
 
 
 
@@ -98,6 +99,7 @@ const Contact = () => {
     return (
 
         <>
+            <NavBar />
             <Particle />
             <ScrollTop />
 

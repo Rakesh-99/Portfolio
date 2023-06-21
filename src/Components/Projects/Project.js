@@ -5,15 +5,14 @@ import ProjectCardData from './ProjectCardData';
 import Footer from '../Footer/Footer';
 import Particle from '../Particles/Particle';
 import ScrollTop from '../ScrollTop/ScrollTop';
+import NavBar from '../NavBar/NavBar';
 
 const Project = () => {
 
 
-
-
-
     return (
         <>
+            <NavBar />
             <Particle />
             <ScrollTop />
             <div className='projectInfo'>

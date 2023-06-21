@@ -3,6 +3,7 @@ import Footer from '../Footer/Footer';
 import '../Resume/Resume.css';
 import Particle from '../Particles/Particle';
 import pdf from '../Assets/RakeshKumarParida.pdf';
+import NavBar from '../NavBar/NavBar';
 
 
 const Resume = () => {
@@ -11,6 +12,7 @@ const Resume = () => {
     return (
 
         <>
+            <NavBar />
             <Particle />
 
             <div className="mainResumeContainer">
