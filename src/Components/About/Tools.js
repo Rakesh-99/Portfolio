@@ -11,7 +11,7 @@ import {
 
 } from "react-icons/si";
 
-import { DiEclipse  } from 'react-icons/di'
+import { DiEclipse } from 'react-icons/di'
 
 const Tools = () => {
 
@@ -20,26 +20,39 @@ const Tools = () => {
         <div className='toolsContainer'>
             <h1 className='toolsTitle'> <span className='toolsClr'>Tools </span>I use</h1>
             <div className="techBoxes">
-                <div className="box">
+                <div className="box" style={{ display: 'flex', flexDirection: 'column' }}>
                     <SiLinux />
+                    <span style={{ fontSize: '1rem' }}>Linux</span>
+
                 </div>
-                <div className="box">
+                <div className="box" style={{ display: 'flex', flexDirection: 'column' }}>
                     <SiVisualstudiocode />
+                    <span style={{ fontSize: '1rem' }}>VsCode</span>
                 </div>
-                <div className="box">
+                <div className="box" style={{ display: 'flex', flexDirection: 'column' }}>
                     <SiPostman />
+                    <span style={{ fontSize: '1rem' }}>Postman</span>
+
                 </div>
-                <div className="box">
+                <div className="box" style={{ display: 'flex', flexDirection: 'column' }}>
                     <SiHeroku />
+                    <span style={{ fontSize: '1rem' }}>Heroku</span>
+
                 </div>
-                <div className="box">
+                <div className="box" style={{ display: 'flex', flexDirection: 'column' }}>
                     <SiVercel />
+                    <span style={{ fontSize: '1rem' }}>Vercel</span>
+
                 </div>
-                <div className="box">
-                    < DiEclipse/>
+                <div className="box" style={{ display: 'flex', flexDirection: 'column' }}>
+                    < DiEclipse />
+                    <span style={{ fontSize: '1rem' }}>Eclipse</span>
+
                 </div>
-                <div className="box">
+                <div className="box" style={{ display: 'flex', flexDirection: 'column' }}>
                     < SiIntellijidea />
+                    <span style={{ fontSize: '1rem' }}>Intellij</span>
+
                 </div>
             </div>
         </div>

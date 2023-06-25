@@ -128,7 +128,7 @@ h3 {
     width: 60%;
   }
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 500px) {
   .home-img-container img {
     width: 90%;
   }

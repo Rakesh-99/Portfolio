@@ -6,12 +6,12 @@ import {
     DiJavascript1,
     DiReact,
     DiJqueryLogo,
-    DiNodejs,  
+    DiNodejs,
     DiMongodb,
     DiGit,
     DiGithub,
     DiMysql,
-    
+
 } from 'react-icons/di';
 
 import {
@@ -21,7 +21,7 @@ import {
     SiCss3
 } from 'react-icons/si';
 
-import { TbBrandBootstrap } from 'react-icons/tb'
+import { TbBrandBootstrap, TbBrandTailwind } from 'react-icons/tb'
 
 
 const Tech = () => {
@@ -33,48 +33,79 @@ const Tech = () => {
             </h1>
 
             <div className="techBoxes">
-                <div className="box">
+                <div className="box" style={{ display: 'flex', flexDirection: 'column' }}>
                     <DiJava />
+                    <span style={{ fontSize: '1rem' }}>Java</span>
                 </div>
-                <div className="box">
+                <div className="box" style={{ display: 'flex', flexDirection: 'column' }}>
                     <SiHtml5 />
+                    <span style={{ fontSize: '1rem' }}>HTML5</span>
+
                 </div>
-                <div className="box">
+                <div className="box" style={{ display: 'flex', flexDirection: 'column' }}>
                     <SiCss3 />
+                    <span style={{ fontSize: '1rem' }}>CSS3</span>
+
                 </div>
-                <div className="box">
+                <div className="box" style={{ display: 'flex', flexDirection: 'column' }}>
                     <TbBrandBootstrap />
+                    <span style={{ fontSize: '1rem' }}>Bootstrap</span>
+
                 </div>
-                <div className="box">
+
+                <div className="box" style={{ display: 'flex', flexDirection: 'column' }}>
+                    <TbBrandTailwind />
+                    <span style={{ fontSize: '1rem' }}>Tailwind</span>
+
+                </div>
+
+                <div className="box" style={{ display: 'flex', flexDirection: 'column' }}>
                     <DiJavascript1 />
+                    <span style={{ fontSize: '1rem' }}>JavaScript</span>
+
                 </div>
-                <div className="box">
+                <div className="box" style={{ display: 'flex', flexDirection: 'column' }}>
                     <DiReact />
+                    <span style={{ fontSize: '1rem' }}>React</span>
+
                 </div>
-                <div className="box">
-                    <DiMongodb />
-                </div>
-                <div className="box">
+
+                <div className="box" style={{ display: 'flex', flexDirection: 'column' }}>
                     <DiNodejs />
+                    <span style={{ fontSize: '1rem' }}>NodeJS</span>
+
                 </div>
-                <div className="box">
-                    <SiExpress/>
+
+                <div className="box" style={{ display: 'flex', flexDirection: 'column' }}>
+                    <SiExpress />
+                    <span style={{ fontSize: '1rem' }}>ExpressJS</span>
+
                 </div>
-                <div className="box">
+
+                <div className="box" style={{ display: 'flex', flexDirection: 'column' }}>
+                    <DiMongodb />
+                    <span style={{ fontSize: '1rem' }}>MongoDB</span>
+
+                </div>
+
+                
+                <div className="box" style={{ display: 'flex', flexDirection: 'column' }}>
                     <DiGit />
+                    <span style={{ fontSize: '1rem' }}>Git & Github</span>
+
                 </div>
-                <div className="box">
+                <div className="box" style={{ display: 'flex', flexDirection: 'column' }}>
                     <SiFirebase />
+                    <span style={{ fontSize: '1rem' }}>Firebase</span>
+
                 </div>
-                <div className="box">
-                    <DiMysql />
-                </div>
-                <div className="box">
+
+                <div className="box" style={{ display: 'flex', flexDirection: 'column' }}>
                     <DiJqueryLogo />
+                    <span style={{ fontSize: '1rem' }}>Jquery</span>
+
                 </div>
-                <div className="box">
-                    <DiGithub />
-                </div>
+                
             </div>
 
         </div>
