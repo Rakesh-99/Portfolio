@@ -39,6 +39,11 @@
   border-radius: 5px;
   background-color: rgb(201, 98, 248);
   margin: 0 2rem;
+  transition: 0.2s;
+}
+.card .navLinks a:active {
+  background-color: rgb(114, 9, 162);
+  transition: 0.2s;
 }
 .card .projectTitle {
   margin: 1rem 0;
