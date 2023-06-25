@@ -15,7 +15,6 @@
   padding: 2rem 0;
 }
 .aboutInfo {
-  /* height: 100vh; */
   display: flex;
   align-items: center;
   width: 100%;
@@ -40,6 +39,8 @@
   font-weight: 400;
   font-size: 1.1rem;
   padding-bottom: 2rem;
+  text-align: justify;
+  line-height: 1.7;
 }
 .aboutLeftInfo .hobbiesList {
   display: flex;
@@ -62,7 +63,81 @@
   color: rgb(201, 98, 248);
 }
 
+.about-me {
+  width: 100%;
+  padding: 1rem 8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: justify;
+}
+.about-me p {
+  margin: 1rem 0;
+  font-size: 17px;
+  line-height: 2;
+  text-align: justify;
+}
+.about-me .colored-text {
+  color: rgb(201, 98, 248);
+  font-weight: 600;
+}
+
 /* Responsive  */
+@media screen and (max-width: 1044px) {
+  .aboutInfo .aboutRightInfo {
+    width: 50%;
+  }
+  .aboutLeftInfo .myInfo {
+    font-size: 15px;
+  }
+  .aboutRightInfo img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .aboutInfo {
+    flex-direction: column;
+  }
+  .aboutInfo .aboutLeftInfo {
+    width: 100%;
+  }
+  .aboutInfo .aboutRightInfo {
+    width: 100%;
+    margin-top: 2rem;
+  }
+  .aboutRightInfo img {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 685px) {
+  .about-me {
+    padding: 1rem 3rem;
+  }
+  .aboutInfo {
+    padding: 9rem 2rem;
+  }
+}
+@media screen and (max-width: 510px) {
+  .about-me {
+    padding: 1rem 3rem;
+  }
+  .about-me p {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .aboutLeftInfo .myInfo {
+    font-size: 14px;
+  }
+  .aboutInfo {
+    padding: 5rem 2rem;
+  }
+  .aboutInfo {
+    padding: 5rem 20px;
+  }
+}
 
 @media screen and (max-width: 360px) {
   .aboutInfo {
@@ -90,74 +165,5 @@
   .aboutLeftInfoTitle h1 {
     font-size: 19px;
     font-weight: 400;
-  }
-}
-@media screen and (max-width: 1044px) {
-  .aboutInfo .aboutRightInfo {
-    width: 50%;
-  }
-  .aboutLeftInfo .myInfo {
-    font-size: 15px;
-  }
-  .aboutRightInfo img {
-    width: 100%;
-  }
-}
-.about-me {
-  width: 100%;
-  padding: 1rem 8rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: justify;
-}
-.about-me p {
-  margin: 1rem 0;
-  font-size: 17px;
-}
-.about-me .colored-text {
-  color: rgb(201, 98, 248);
-  font-weight: 600;
-}
-@media screen and (max-width: 950px) {
-  .aboutInfo {
-    flex-direction: column;
-  }
-  .aboutInfo .aboutLeftInfo {
-    width: 100%;
-  }
-  .aboutInfo .aboutRightInfo {
-    width: 100%;
-    margin-top: 2rem;
-  }
-  .aboutRightInfo img {
-    width: 100%;
-  }
-}
-@media screen and (max-width: 685px) {
-  .about-me {
-    padding: 1rem 5rem;
-  }
-}
-@media screen and (max-width: 510px) {
-  .aboutInfo {
-    padding: 9rem 2rem;
-  }
-  .about-me {
-    padding: 1rem 3rem;
-  }
-  .about-me p {
-    font-size: 15px;
-  }
-}
-@media screen and (max-width: 425px) {
-  .aboutLeftInfo .myInfo {
-    font-size: 14px;
-  }
-  .aboutInfo {
-    padding: 5rem 2rem;
-  }
-  .aboutInfo {
-    padding: 5rem 20px;
   }
 }

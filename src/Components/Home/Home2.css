@@ -25,6 +25,8 @@
   padding: 1.5rem 0;
   font-weight: 400;
   font-size: 18px;
+  line-height: 1.7;
+  text-align: justify;
 }
 .clrTxt {
   color: rgb(201, 98, 248);
