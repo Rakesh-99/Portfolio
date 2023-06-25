@@ -97,7 +97,7 @@
     background-color: rgb(16, 0, 31);
   }
   .navContainer {
-    padding: 0;
+    padding: 1rem 0.3rem;
   }
   .navContainer h2 {
     font-size: 20px;
