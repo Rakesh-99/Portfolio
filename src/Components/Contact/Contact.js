@@ -48,16 +48,16 @@ const Contact = () => {
         // user_name validation : 
 
         if (!values.user_name) {
-            err.user_name = '*user_name is required';
+            err.user_name = '*Username is required';
         } else if (values.user_name.length < 2) {
-            err.user_name = '*user_name can not be less than 2 char';
+            err.user_name = '*Username can not be less than 2 char';
         } else if (values.user_name.length > 20) {
-            err.user_name = '*user_name can not contain more than 20 char';
+            err.user_name = '*Username can not contain more than 20 char';
         };
 
         // user_email validation : 
         if (!values.user_email) {
-            err.user_email = '*user_email field is required';
+            err.user_email = '*Email field is required';
         } else if (!regex.test(values.user_email)) {
             err.user_email = '*Invalid user_email entered';
         };
