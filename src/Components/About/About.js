@@ -32,7 +32,7 @@ const About = () => {
 
                     <h2 className='myInfo'>
                         Hi Everyone, I am <span className='clr'>Rakesh Kumar Parida</span> from <span className='clr'>Bhubaneswar,India.</span>.
-                        I am a student of 3rd year pursuing B.TECH in Computer Science in Nalanda Institute of Technology, Bhubaneswar.
+                        I am a student of 3rd year pursuing B.TECH in Computer Science from Nalanda Institute of Technology, Bhubaneswar.
                     </h2>
 
                     <h2 className='myInfo'>Apart from coding,some other activities that I love !</h2>
