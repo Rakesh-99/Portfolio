@@ -58,7 +58,7 @@ const NavBar = () => {
 
                 <li>
                     <span className='reactNavIcons'> <FaBlog /> </span>
-                    <Link to={'/blog'}>Blog</Link>
+                    <a href="https://rakeshblog.onrender.com/" target='_blank'>Blog</a>
                 </li>
 
                 <li>
