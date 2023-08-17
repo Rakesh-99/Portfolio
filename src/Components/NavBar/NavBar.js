@@ -28,6 +28,7 @@ const NavBar = () => {
     window.addEventListener('scroll', changeColor);
 
     return (
+        
         <div className={color ? 'navContainer bg' : 'navContainer'}>
 
 

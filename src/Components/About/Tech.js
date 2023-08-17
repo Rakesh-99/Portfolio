@@ -35,7 +35,7 @@ const Tech = () => {
             <div className="techBoxes">
                 <div className="box" style={{ display: 'flex', flexDirection: 'column' }}>
                     <DiJava />
-                    <span style={{ fontSize: '1rem' }}>Java</span>
+                    <span style={{ fontSize: '1rem' }}>Core Java</span>
                 </div>
                 <div className="box" style={{ display: 'flex', flexDirection: 'column' }}>
                     <SiHtml5 />
@@ -45,11 +45,6 @@ const Tech = () => {
                 <div className="box" style={{ display: 'flex', flexDirection: 'column' }}>
                     <SiCss3 />
                     <span style={{ fontSize: '1rem' }}>CSS3</span>
-
-                </div>
-                <div className="box" style={{ display: 'flex', flexDirection: 'column' }}>
-                    <TbBrandBootstrap />
-                    <span style={{ fontSize: '1rem' }}>Bootstrap</span>
 
                 </div>
 
@@ -97,13 +92,6 @@ const Tech = () => {
                 <div className="box" style={{ display: 'flex', flexDirection: 'column' }}>
                     <SiFirebase />
                     <span style={{ fontSize: '1rem' }}>Firebase</span>
-
-                </div>
-
-                <div className="box" style={{ display: 'flex', flexDirection: 'column' }}>
-                    <DiJqueryLogo />
-                    <span style={{ fontSize: '1rem' }}>Jquery</span>
-
                 </div>
                 
             </div>

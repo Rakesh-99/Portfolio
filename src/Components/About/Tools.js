@@ -7,9 +7,11 @@ import {
     SiPostman,
     SiHeroku,
     SiVercel,
-    SiIntellijidea
-
+    SiIntellijidea,
+    SiNetlify,
+    SiRailway
 } from "react-icons/si";
+
 
 import { DiEclipse } from 'react-icons/di'
 
@@ -44,6 +46,17 @@ const Tools = () => {
                     <span style={{ fontSize: '1rem' }}>Vercel</span>
 
                 </div>
+                <div className="box" style={{ display: 'flex', flexDirection: 'column' }}>
+                    <SiNetlify />
+                    <span style={{ fontSize: '1rem' }}>Netlify</span>
+
+                </div>
+                <div className="box" style={{ display: 'flex', flexDirection: 'column' }}>
+                    <SiRailway />
+                    <span style={{ fontSize: '1rem' }}>Railway Hosting</span>
+
+                </div>
+
                 <div className="box" style={{ display: 'flex', flexDirection: 'column' }}>
                     < DiEclipse />
                     <span style={{ fontSize: '1rem' }}>Eclipse</span>
