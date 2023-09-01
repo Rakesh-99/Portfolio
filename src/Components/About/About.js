@@ -50,7 +50,7 @@ const About = () => {
                 </div>
 
                 <div className="aboutRightInfo">
-                    <img src={aboutImg} alt="aboutImg" />
+                    <img src={aboutImg} alt="aboutImg" loading='lazy' fetchpriority='high' decoding='async' />
                 </div>
 
             </div>

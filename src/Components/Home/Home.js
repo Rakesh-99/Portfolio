@@ -54,7 +54,7 @@ const Home = () => {
 
 
                 <div className="home-img-container">
-                    <img src={homeImg} alt="homeImg" />
+                    <img src={homeImg} alt="homeImg" fetchpriority='high' decoding='async' loading='lazy' />
                 </div>
 
             </div>

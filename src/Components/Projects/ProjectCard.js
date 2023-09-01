@@ -9,7 +9,7 @@ const ProjectCard = (props) => {
         <div className='projectCard'>
             <div className="card">
                 <div className="imgContainer">
-                    <img src={props.imgSrc} alt="" className='project1Img' />
+                    <img src={props.imgSrc}  alt="projectImage" className='project1Img' loading='lazy' decoding='async' fetchpriority='high'  />
                 </div>
                 <h3 className='projectTitle'>{props.projectTitle}</h3>
                 <p className='aboutProject'>{props.aboutProject}</p>

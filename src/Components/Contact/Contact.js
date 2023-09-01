@@ -111,7 +111,7 @@ const Contact = () => {
             <div className='controller'>
 
                 <div className='leftContent'>
-                    <img className='contactImg' src={ContactImage} alt="conatcImg" />
+                    <img className='contactImg' src={ContactImage} alt="conatcImg" fetchpriority='high' loading='lazy' decoding='async' />
                 </div>
 
                 <div className="rightContent">
