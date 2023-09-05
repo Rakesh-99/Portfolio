@@ -2,7 +2,7 @@ import React from 'react';
 import Footer from '../Footer/Footer';
 import '../Resume/Resume.css';
 import Particle from '../Particles/Particle';
-import pdf from '../Assets/RakeshKumarParida.pdf';
+import pdf from '../Assets/Rakesh Kumar Parida.pdf';
 import NavBar from '../NavBar/NavBar';
 
 
