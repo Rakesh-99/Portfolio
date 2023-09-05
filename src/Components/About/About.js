@@ -57,10 +57,10 @@ const About = () => {
             <Tech />
             <div className='about-me'>
                 <p style={{ color: '#fff' }}>
-                    I am a <span className='colored-text'>Mern Stack developer</span> with a passion for building <span className='colored-text'>beautiful</span> and <span className='colored-text'>user friendly</span> websites. I have a strong understanding
-                    of <span className='colored-text'> front-end development</span> and familiar with Backend technologies like <span className='colored-text'>Node</span>,<span className='colored-text'>Express</span> and <span className='colored-text'>MongoDB</span>. Apart from that I have
-                    knowledge of <span className='colored-text'>JWT Authentication</span> and creating <span className='colored-text'>REST APIS</span> with real time Database which is <span className='colored-text'> MongoDB Atlas</span>.
-                    The Integration, deployment of MERN Stack application in platforms like <span className='colored-text'>Vercel, Render</span> and <span className='colored-text'> Netlify</span>, and so on.
+                    I am a <span className='colored-text'>Mern Stack developer</span> with a passion for creating <span className='colored-text'>beautiful</span> and <span className='colored-text'>user-friendly</span> websites. I have a strong understanding
+                    of <span className='colored-text'> front-end development</span> and familiar with Backend technologies like <span className='colored-text'>Node</span>,<span className='colored-text'>Express</span> and <span className='colored-text'>MongoDB</span>. Additionally, I have
+                    expertise in <span className='colored-text'>JWT Authentication</span> and creating <span className='colored-text'>REST APIS</span> with real time Database integration using<span className='colored-text'> MongoDB Atlas</span>.
+                    I am experienced in deploying MERN Stack applications on platforms such as <span className='colored-text'>Vercel, Render</span> and <span className='colored-text'> Netlify</span>
                 </p>
 
                 <p style={{ color: '#fff' }}>
