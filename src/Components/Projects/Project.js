@@ -16,7 +16,7 @@ const Project = () => {
             <Particle />
             <ScrollTop />
             <div className='projectInfo'>
-                <h1>Projects</h1>
+                <h1>See My Work</h1>
                 <p>Here are a few Projects I'have worked on recently</p>
             </div>
 
