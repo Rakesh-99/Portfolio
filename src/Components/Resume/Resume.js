@@ -4,6 +4,7 @@ import '../Resume/Resume.css';
 import Particle from '../Particles/Particle';
 import pdf from '../Assets/Rakesh Kumar Parida.pdf';
 import NavBar from '../NavBar/NavBar';
+import ResumeImage from '../Assets/RakeshKumarParidaCV.png';
 
 
 const Resume = () => {
@@ -22,8 +23,12 @@ const Resume = () => {
                         <button>Resume</button>
                     </a>
                 </div>
+                <div className="showResume ">
+                    <img src={ResumeImage} alt="Resume" />
+                </div>
+
             </div>
-            <Footer />
+                <Footer />
         </>
     )
 }
