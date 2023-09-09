@@ -13,7 +13,7 @@ const ProjectCardData = [
         imgSrc: MernBlogImg,
         projectTitle: 'MERN STACK blog webapp',
         aboutProject: 'I have created a multi-page MERN Stack blog app using React and Tailwind Css for the front-end, and Node.js, Express Js, and MongoDB for the backend ',
-        url1: 'https://tech-talk-ochre.vercel.app/',
+        url1: 'https://rakeshblog.vercel.app/',
         url2: 'https://github.com/Rakesh-99/Blog-App'
     },
     {
