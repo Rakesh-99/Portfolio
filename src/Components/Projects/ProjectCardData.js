@@ -10,6 +10,13 @@ import WeatherAppImg from '../Assets/Project4.png';
 
 const ProjectCardData = [
     {
+        imgSrc: MernBlogImg,
+        projectTitle: 'MERN STACK blog webapp',
+        aboutProject: 'I have created a multi-page MERN Stack blog app using React and Tailwind Css for the front-end, and Node.js, Express Js, and MongoDB for the backend ',
+        url1: 'https://tech-talk-ochre.vercel.app/',
+        url2: 'https://github.com/Rakesh-99/Blog-App'
+    },
+    {
         imgSrc: ProjectImg3,
         projectTitle: 'MERN STACK CRUD Operation',
         aboutProject: 'This project is built using MongoDB, ExpressJs, ReactJs, and Node.js, with  MongoDB Atlas serving as the cloud - based database for performing Create, Read, Update, and Delete(CRUD) operations',
@@ -22,14 +29,6 @@ const ProjectCardData = [
         aboutProject: 'My personal portfolio is a showcase of my skills and accomplishments as a web developer.It was built using React, a powerful JavaScript library for building user interface, to create an interactive and visually appealing web presence.',
         url1: 'https://react-personal-portfolio-coral.vercel.app/',
         url2: 'https://github.com/Rakesh-99/React-Personal-Portfolio-'
-    },
-
-    {
-        imgSrc: MernBlogImg,
-        projectTitle: 'MERN STACK blog webapp',
-        aboutProject: 'I have created a multi-page MERN Stack blog app using React and Tailwind Css for the front-end, and Node.js, Express Js, and MongoDB for the backend ',
-        url1: 'https://tech-talk-ochre.vercel.app/',
-        url2: 'https://github.com/Rakesh-99/Blog-App'
     },
     {
         imgSrc: WeatherAppImg,

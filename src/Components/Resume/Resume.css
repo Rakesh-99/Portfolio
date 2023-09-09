@@ -46,3 +46,6 @@
 .showResume img {
 	width: 90%;
 }
+.downloadCV:active{
+	background-color: greenyellow;
+}

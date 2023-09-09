@@ -18,9 +18,9 @@ const Resume = () => {
 
             <div className="mainResumeContainer">
                 <div className="resumeContainer">
-                    <p>Download Resume</p>
+
                     <a href={myResume} target='_blank'>
-                        <button> Download Resume</button>
+                        <button className='downloadCV'> Download CV</button>
                     </a>
                 </div>
                 <div className="showResume ">
