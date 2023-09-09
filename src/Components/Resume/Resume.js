@@ -2,9 +2,9 @@ import React from 'react';
 import Footer from '../Footer/Footer';
 import '../Resume/Resume.css';
 import Particle from '../Particles/Particle';
-import pdf from '../Assets/Rakesh Kumar Parida.pdf';
 import NavBar from '../NavBar/NavBar';
-import ResumeImage from '../Assets/RakeshKumarParidaCV.png';
+import myResume from '../Assets/RakeshResume.pdf';
+import resumeImg from '../Assets/RakeshKumarParidaCV.png'
 
 
 const Resume = () => {
@@ -19,16 +19,16 @@ const Resume = () => {
             <div className="mainResumeContainer">
                 <div className="resumeContainer">
                     <p>Download Resume</p>
-                    <a href={pdf} target='_blank'>
-                        <button>Resume</button>
+                    <a href={myResume} target='_blank'>
+                        <button> Download Resume</button>
                     </a>
                 </div>
                 <div className="showResume ">
-                    <img src={ResumeImage} alt="Resume" />
+                    <img src={resumeImg} alt="Resume" />
                 </div>
 
             </div>
-                <Footer />
+            <Footer />
         </>
     )
 }
