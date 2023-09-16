@@ -28,7 +28,7 @@ const NavBar = () => {
     window.addEventListener('scroll', changeColor);
 
     return (
-        
+
         <div className={color ? 'navContainer bg' : 'navContainer'}>
 
 
@@ -59,7 +59,7 @@ const NavBar = () => {
 
                 <li>
                     <span className='reactNavIcons'> <FaBlog /> </span>
-                    <a href="https://rakeshblog.onrender.com/" target='_blank'>Blog</a>
+                    <a href="https://rakeshblog.vercel.app/" target='_blank'>Blog</a>
                 </li>
 
                 <li>
