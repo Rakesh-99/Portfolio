@@ -3,8 +3,8 @@ import Footer from '../Footer/Footer';
 import '../Resume/Resume.css';
 import Particle from '../Particles/Particle';
 import NavBar from '../NavBar/NavBar';
-import myResume from '../Assets/RakeshKumarParidaResume.pdf';
-import resumeImg from '../Assets/RakeshKumarParidaResume.png';
+import resume from '../Assets/resumeImg.jpg';
+import resumePdf from '../Assets/resume.pdf';
 
 
 const Resume = () => {
@@ -19,14 +19,13 @@ const Resume = () => {
             <div className="mainResumeContainer">
                 <div className="resumeContainer">
 
-                    <a href={myResume} target='_blank'>
+                    <a href={resumePdf} target='_blank'>
                         <button className='downloadCV'> Download CV</button>
                     </a>
                 </div>
                 <div className="showResume ">
-                    <img src={resumeImg} alt="Resume" />
+                    <img src={resume} alt="Resume" />
                 </div>
-
             </div>
             <Footer />
         </>
