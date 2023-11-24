@@ -59,20 +59,25 @@
   display: flex;
 }
 .navUl li a:hover {
-  color: blueviolet;
+  color: rgb(209, 209, 209);
 }
 .navUl li a {
   text-decoration: none;
   font-size: 0.9rem;
-  font-weight: 600;
+  font-weight: 500;
   text-decoration: none;
-  color: #fff;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode";
+  color: #ececec;
 }
 .navUl li a :hover {
   color: rgb(153, 235, 19);
+
 }
+.navUl li:hover{
+  text-decoration: underline;
+  text-decoration-color:rgb(209, 209, 209);
+
+}
+
 
 .hamBurger {
   display: none;
