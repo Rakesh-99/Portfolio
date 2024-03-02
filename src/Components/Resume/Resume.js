@@ -4,7 +4,7 @@ import '../Resume/Resume.css';
 import Particle from '../Particles/Particle';
 import NavBar from '../NavBar/NavBar';
 import resume from '../Assets/resumeImg.jpg';
-import resumePdf from '../Assets/resume.pdf';
+import resumePdf from '../Assets/resume2-1.pdf'
 
 
 const Resume = () => {
