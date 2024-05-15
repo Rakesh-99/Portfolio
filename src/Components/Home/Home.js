@@ -26,22 +26,26 @@ const Home = () => {
 
                 <div className="typeWriterContainer">
                     <h1 style={{ color: '#fff' }}> Hi There! <span className='wave'>👋</span>
-                        <span><h3> I'M<span className='name'>RAKESH KUMAR PARIDA</span> </h3></span>
+                        <span><h3> I'm<span className='name'>RAKESH KUMAR PARIDA.</span> </h3></span>
                         <span>
 
                             <TypeWriterEffect
                                 textStyle={{
                                     color: 'rgb(201, 98, 248)',
                                     fontWeight: 500,
-                                    fontSize: '1.3em',
+                                    fontSize: '0.8em',
+
 
                                 }}
                                 startDelay={100}
                                 cursorColor="rgb(201, 98, 248)"
 
                                 multiText={[
-                                    'Student',
-                                    'Front-end Developer',
+
+                                    'Mern Stack Developer',
+                                    'Good understanding in Oops concept',
+                                    'Skilled in Core Java'
+
 
                                 ]}
                                 multiTextDelay={2000}
