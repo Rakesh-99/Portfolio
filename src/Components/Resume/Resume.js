@@ -3,8 +3,8 @@ import Footer from '../Footer/Footer';
 import '../Resume/Resume.css';
 import Particle from '../Particles/Particle';
 import NavBar from '../NavBar/NavBar';
-import resume from '../Assets/resumeImg.jpg';
-import resumePdf from '../Assets/resume2-1.pdf'
+import resumePdf from '../Assets/Rakesh Kumar Parida.pdf';
+import resumeImg from '../Assets/Rakesh Kumar Parida.png'
 
 
 const Resume = () => {
@@ -24,7 +24,7 @@ const Resume = () => {
                     </a>
                 </div>
                 <div className="showResume ">
-                    <img src={resume} alt="Resume" />
+                    <img src={resumeImg} alt="Resume" />
                 </div>
             </div>
             <Footer />
