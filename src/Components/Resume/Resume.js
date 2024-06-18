@@ -3,8 +3,8 @@ import Footer from '../Footer/Footer';
 import '../Resume/Resume.css';
 import Particle from '../Particles/Particle';
 import NavBar from '../NavBar/NavBar';
+import resumeImg from '../Assets/Rakesh Kumar Parida.png';
 import resumePdf from '../Assets/Rakesh Kumar Parida.pdf';
-import resumeImg from '../Assets/Rakesh Kumar Parida.png'
 
 
 const Resume = () => {
