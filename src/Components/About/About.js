@@ -9,7 +9,7 @@ import Footer from '../Footer/Footer'
 import Particle from '../Particles/Particle';
 import ScrollTop from '../ScrollTop/ScrollTop';
 import NavBar from '../NavBar/NavBar';
-
+import { motion } from 'framer-motion';
 
 
 const About = () => {
@@ -27,12 +27,23 @@ const About = () => {
 
                 <div className="aboutLeftInfo">
                     <div className="aboutLeftInfoTitle">
-                        <h1>Know Who <span className='iAm'>Iam</span></h1>
+                        <motion.h1
+                            initial={{ x: -100 }}
+                            animate={{ x: 10 }}
+                            transition={{
+                                duration: 1,
+                                delay: 0
+                            }}
+
+                        >Know Who <span className='iAm'>Iam</span></motion.h1>
                     </div>
 
                     <h2 className='myInfo'>
-                        Hi Everyone, I am <span className='clr'>Rakesh Kumar Parida</span> from <span className='clr'>Bhubaneswar,Odisha.</span>.
-                        I am a student of 4th year pursuing B.TECH in Computer Science from Nalanda Institute of Technology, Bhubaneswar.
+                        Hi there, I am <span className='clr'>Rakesh</span> from <span className='clr'>Bhubaneswar,Odisha.</span>
+                        I'm a dedicated web developer with a passion for crafting websites from scratch to completion. To me, creating a website is like editing a photo—every detail matters, and each element contributes to the overall picture. I thrive on designing intuitive and visually appealing user interfaces, meticulously arranging every pixel to achieve the perfect balance between form and function.
+                        <br />
+                        <span className='clr'>You could check my work in project section.</span>
+
                     </h2>
 
                     <h2 className='myInfo'>Apart from coding,some other activities that I love !</h2>
