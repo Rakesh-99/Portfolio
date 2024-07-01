@@ -13,7 +13,7 @@ const ProjectCardData = [
         imgSrc: MernBlogImg,
         projectTitle: 'MERN STACK blog App',
         aboutProject: 'A fullstack blog app using MERN. It has some features include Admin panel,advance authentication using json web token,sorting,searching, password hashing, theme preference and much more.',
-        url1: 'https://blogwizard.verel.app',
+        url1: 'https://blogwizard.vercel.app/',
         url2: 'https://github.com/Rakesh-99/Fullstack-Blog-App'
     },
     {
