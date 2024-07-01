@@ -1,17 +1,13 @@
 import React from 'react';
-import '../About/Tech.css';
+import '../Tech/Tech.css';
 
 import {
     DiJava,
     DiJavascript1,
     DiReact,
-    DiJqueryLogo,
     DiNodejs,
     DiMongodb,
     DiGit,
-    DiGithub,
-    DiMysql,
-
 } from 'react-icons/di';
 
 import {
@@ -21,7 +17,7 @@ import {
     SiCss3
 } from 'react-icons/si';
 
-import { TbBrandBootstrap, TbBrandTailwind } from 'react-icons/tb'
+import { TbBrandTailwind } from 'react-icons/tb'
 
 
 const Tech = () => {
@@ -83,7 +79,7 @@ const Tech = () => {
 
                 </div>
 
-                
+
                 <div className="box" style={{ display: 'flex', flexDirection: 'column' }}>
                     <DiGit />
                     <span style={{ fontSize: '1rem' }}>Git & Github</span>
@@ -93,7 +89,7 @@ const Tech = () => {
                     <SiFirebase />
                     <span style={{ fontSize: '1rem' }}>Firebase</span>
                 </div>
-                
+
             </div>
 
         </div>

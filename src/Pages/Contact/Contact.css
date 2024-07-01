@@ -2,7 +2,7 @@
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  background: url("../Assets/home-bg.jpg"), rgba(0, 0, 0, 0.9);
+  background: url("../../Components/Assets/home-bg.jpg"), rgba(0, 0, 0, 0.9);
   background-blend-mode: darken;
   background-repeat: repeat;
   background-position: left;
@@ -31,7 +31,7 @@
   align-items: center;
   border-radius: 10px;
   margin-top: 3rem;
-  background: url("../Assets/home-bg.jpg"), rgba(0, 0, 0, 0.7);
+  background: url("../../Components/Assets//contact.png"), rgba(0, 0, 0, 0.7);
   background-position: bottom;
   background-size: 50rem;
   background-blend-mode: darken;

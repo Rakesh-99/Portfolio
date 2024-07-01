@@ -59,7 +59,7 @@ const NavBar = () => {
 
                 <li>
                     <span className='reactNavIcons'> <FaBlog /> </span>
-                    <a href="https://codecrafter99.vercel.app/" target='_blank'>Blog</a>
+                    <a href="https://blogwizard.vercel.app/">Blog</a>
                 </li>
 
                 <li>

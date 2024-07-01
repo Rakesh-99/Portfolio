@@ -5,6 +5,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  align-items: center;
 }
 .projectCard .card {
   border-radius: 10px;
@@ -62,7 +63,7 @@
     width: 80%;
   }
   .projectCard {
-    width: 350px;
+    width: 400px;
   }
 }
 @media screen and (max-width: 400px) {

@@ -11,9 +11,9 @@ import WeatherAppImg from '../Assets/Project4.png';
 const ProjectCardData = [
     {
         imgSrc: MernBlogImg,
-        projectTitle: 'MERN STACK blog webapp',
-        aboutProject: 'I have created a multi-page MERN Stack blog app using React and Tailwind Css for the front-end, and Node.js, Express Js, and MongoDB for the backend ',
-        url1: 'https://codecrafter99.vercel.app/',
+        projectTitle: 'MERN STACK blog App',
+        aboutProject: 'A fullstack blog app using MERN. It has some features include Admin panel,advance authentication using json web token,sorting,searching, password hashing, theme preference and much more.',
+        url1: 'https://blogwizard.verel.app',
         url2: 'https://github.com/Rakesh-99/Fullstack-Blog-App'
     },
     {

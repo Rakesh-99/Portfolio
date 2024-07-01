@@ -1,11 +1,11 @@
 import React from 'react';
 import '../Home/Home.css';
 import TypeWriterEffect from 'react-typewriter-effect';
-import homeImg from '../Assets/homeImg.png'
-import Home2 from './Home2';
-import Particle from '../Particles/Particle';
-import ScrollTop from '../ScrollTop/ScrollTop';
-import NavBar from '../NavBar/NavBar';
+import homeImg from '../../Components/Assets/homeImg.png';
+import Home2 from '../../Pages/Home/Home2';
+import Particle from '../../Components/Particles/Particle';
+import ScrollTop from '../../Components/ScrollTop/ScrollTop';
+import NavBar from '../../Components/NavBar/NavBar';
 import { motion } from 'framer-motion';
 
 

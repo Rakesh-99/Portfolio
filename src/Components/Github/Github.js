@@ -1,6 +1,6 @@
 import React from 'react'
 import GitHubCalendar from 'react-github-calendar';
-import '../About/Github.css';
+import './Github.css';
 
 const Github = () => {
     return (

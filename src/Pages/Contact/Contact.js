@@ -1,12 +1,12 @@
 import React, { useState, useEffect, useRef } from 'react';
-import Footer from '../Footer/Footer';
-import Particle from '../Particles/Particle';
+import Footer from '../../Components/Footer/Footer';
+import Particle from '../../Components/Particles/Particle';
 import './Contact.css';
 import { FcBusinessContact } from 'react-icons/fc';
 import emailjs from '@emailjs/browser';
-import ContactImage from '../Assets/contact.png';
-import ScrollTop from '../ScrollTop/ScrollTop';
-import NavBar from '../NavBar/NavBar';
+import ContactImage from '../../Components/Assets/contact.png'
+import ScrollTop from '../../Components/ScrollTop/ScrollTop';
+import NavBar from '../../Components/NavBar/NavBar';
 
 
 

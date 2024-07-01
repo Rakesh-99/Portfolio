@@ -1,14 +1,14 @@
 import React from 'react';
 import '../About/About.css';
-import aboutImg from '../Assets/about.png'
+import aboutImg from '../../Components/Assets/about.png';
 import { FaRegHandPointRight } from 'react-icons/fa'
-import Tech from './Tech';
-import Tools from './Tools'
-import Github from './Github';
-import Footer from '../Footer/Footer'
-import Particle from '../Particles/Particle';
-import ScrollTop from '../ScrollTop/ScrollTop';
-import NavBar from '../NavBar/NavBar';
+import Tech from '../../Components/Tech/Tech';
+import Tools from '../../Components/Tool/Tools';
+import Github from '../../Components/Github/Github';
+import Footer from '../../Components/Footer/Footer';
+import Particle from '../../Components/Particles/Particle'
+import ScrollTop from '../../Components/ScrollTop/ScrollTop';
+import NavBar from '../../Components/NavBar/NavBar';
 import { motion } from 'framer-motion';
 
 
