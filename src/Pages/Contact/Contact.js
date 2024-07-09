@@ -100,7 +100,7 @@ const Contact = () => {
 
         <>
             <NavBar />
-            <Particle />
+            {/* <Particle /> */}
             <ScrollTop />
 
             {

@@ -13,7 +13,7 @@ const Project = () => {
     return (
         <>
             <NavBar />
-            <Particle />
+            {/* <Particle /> */}
             <ScrollTop />
             <div className='projectInfo'>
                 <h1>See My Work</h1>
