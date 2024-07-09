@@ -31,7 +31,7 @@
   align-items: center;
   border-radius: 10px;
   margin-top: 3rem;
-  background: url("../../Components/Assets//contact.png"), rgba(0, 0, 0, 0.7);
+  /* background: url("../../Components/Assets//contact.png"), rgba(0, 0, 0, 0.7); */
   background-position: bottom;
   background-size: 50rem;
   background-blend-mode: darken;
@@ -71,7 +71,7 @@
   border-color: rgb(201, 98, 248);
   cursor: pointer;
   margin-top: 10px;
-  box-shadow: 1px 1px 5rem 1px rgb(201, 98, 248);
+  box-shadow: 1px 1px 10px 1px rgb(106, 54, 132);
 }
 
 /* Toast Notifier  */

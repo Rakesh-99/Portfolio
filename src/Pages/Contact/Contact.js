@@ -115,7 +115,6 @@ const Contact = () => {
                 </div>
 
                 <div className="rightContent">
-
                     <form action="" onSubmit={submitHandle} ref={form}>
                         <FcBusinessContact className='contactIcon' />
                         <input type="text" placeholder='Username' onChange={changeHandle} name="user_name" value={values.user_name} autoComplete='off' />
@@ -126,6 +125,7 @@ const Contact = () => {
                         <span className='error'>{error.message}</span>
                         <button type='submit'>Send</button>
                     </form>
+
                 </div>
 
             </div>
