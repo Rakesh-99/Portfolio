@@ -3,29 +3,33 @@ import Footer from '../Footer/Footer';
 import '../Resume/Resume.css';
 import Particle from '../Particles/Particle';
 import NavBar from '../NavBar/NavBar';
-import resumeImg from '../Assets/RakeshResume.pdf';
-import resumePdf from '../Assets/RakeshResume.png';
+import RakeshResumePdf from '../Assets/RakeshResume.pdf';
+import RakeshResumeImg from '../Assets/RakeshResume.png';
 
 
 
 const Resume = () => {
 
 
+    const click = () => {
+        console.log('Hello');
+    }
+
+
     return (
 
         <>
             <NavBar />
-            <Particle />
+            {/* <Particle /> */}
 
             <div className="mainResumeContainer">
                 <div className="resumeContainer">
-
-                    <a href={resumePdf} target='_blank'>
-                        <button className='downloadCV'> Download CV</button>
-                    </a>
+                    <button>
+                        <a style={{ textDecoration: "none", color: "white" }} href={RakeshResumePdf} download='RakeshResumePdf' onClick={click}>Download CV</a>
+                    </button>
                 </div>
                 <div className="showResume ">
-                    <img src={resumeImg} alt="Resume" />
+                    <img src={RakeshResumeImg} alt="Resume" />
                 </div>
             </div>
             <Footer />
