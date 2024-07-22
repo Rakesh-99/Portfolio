@@ -28,7 +28,7 @@ const About = () => {
                 <div className="aboutLeftInfo">
                     <div className="aboutLeftInfoTitle">
                         <motion.h1
-                            initial={{ x: -100 }}
+                            initial={{ x: -50 }}
                             animate={{ x: 10 }}
                             transition={{
                                 duration: 1,

@@ -27,7 +27,7 @@ const Home = () => {
                 <div className="typeWriterContainer">
                     <h1 style={{ color: '#fff' }}> Hi There! <span className='wave'>👋</span>
                         <span><motion.h3
-                            initial={{ x: -100 }}
+                            initial={{ x: -30 }}
                             animate={{ x: 10 }}
                             transition={{
                                 duration: 1,
@@ -67,7 +67,7 @@ const Home = () => {
                 <div className="home-img-container">
                     <motion.img src={homeImg} alt="homeImg" fetchpriority='high' decoding='async' loading='lazy'
 
-                        initial={{ x: 100 }}
+                        initial={{ x: 50 }}
                         animate={{ x: 10 }}
                         transition={{
                             duration: 1,
