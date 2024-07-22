@@ -1,108 +1,70 @@
-import React from 'react'
 import { useCallback } from "react";
 import Particles from "react-particles";
-import { loadFull } from "tsparticles";
-
-
-
+//import { loadFull } from "tsparticles"; // if you are going to use `loadFull`, install the "tsparticles" package too.
+import { loadSlim } from "tsparticles-slim"; // if you are going to use `loadSlim`, install the "tsparticles-slim" package too.
 
 const Particle = () => {
-
-    //  React ts-particles  config :
-
     const particlesInit = useCallback(async engine => {
-
-        await loadFull(engine);
+        console.log(engine);
+        // you can initiate the tsParticles instance (engine) here, adding custom shapes or presets
+        // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
+        // starting from v2 you can add only the features you need reducing the bundle size
+        //await loadFull(engine);
+        await loadSlim(engine);
     }, []);
 
     const particlesLoaded = useCallback(async container => {
-
+        await console.log(container);
     }, []);
 
     return (
-        <>
-
-
-            <Particles
-                id="tsparticles"
-                init={particlesInit}
-                loaded={particlesLoaded}
-                options={{
-                    background: {
-                        color: {
-                            value: "transparent",
-                        },
-                    },
-                    fpsLimit: 120,
-                    interactivity: {
-                        events: {
-                            onClick: {
-                                enable: false,
-                                mode: "push",
-                            },
-                            onHover: {
-                                enable: false,
-                                mode: "repulse",
-                            },
-                            resize: true,
-                        },
-                        modes: {
-                            push: {
-                                quantity: 4,
-                            },
-                            repulse: {
-                                distance: 200,
-                                duration: 0.4,
-                            },
-                        },
-                    },
-                    particles: {
-                        color: {
-                            value: "#fff",
-                        },
-                        links: {
-                            color: "#ffffff",
-                            distance: 150,
-                            enable: false,
-                            opacity: 0.9,
-                            width: 1,
-                        },
-                        collisions: {
+        <Particles
+            id="tsparticles"
+            init={particlesInit}
+            loaded={particlesLoaded}
+            params={{
+                particles: {
+                    number: {
+                        value: 200,
+                        density: {
                             enable: true,
-                        },
-                        move: {
-                            direction: 'none',
-                            enable: true,
-                            outModes: {
-                                default: 'bounce',
-                            },
-                            random: false,
-                            speed: 0.1,
-                            straight: false,
-                        },
-                        number: {
-                            density: {
-                                enable: true,
-                                area: 1000,
-                            },
-                            value: 80,
-                        },
-                        opacity: {
-                            value: 0.7,
-                        },
-                        shape: {
-                            type: "circle",
-                        },
-                        size: {
-                            value: { min: 1, max: 1 },
+                            value_area: 1500,
                         },
                     },
-                    detectRetina: true,
-                }}
-            />
-
-        </>
-    )
-}
-
-export default Particle;
+                    line_linked: {
+                        enable: false,
+                        opacity: 0.03,
+                    },
+                    move: {
+                        direction: "right",
+                        speed: 0.10,
+                    },
+                    size: {
+                        value: 1,
+                    },
+                    opacity: {
+                        anim: {
+                            enable: true,
+                            speed: 1,
+                            opacity_min: 0.05,
+                        },
+                    },
+                },
+                interactivity: {
+                    events: {
+                        onclick: {
+                            enable: true,
+                            mode: "push",
+                        },
+                    },
+                    modes: {
+                        push: {
+                            particles_nb: 1,
+                        },
+                    },
+                }
+            }}
+        />
+    );
+};
+export default Particle

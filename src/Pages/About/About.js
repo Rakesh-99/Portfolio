@@ -20,7 +20,7 @@ const About = () => {
         <div className='aboutContainer'>
 
             <NavBar />
-            {/* <Particle /> */}
+            <Particle />
             <ScrollTop />
 
             <div className="aboutInfo">

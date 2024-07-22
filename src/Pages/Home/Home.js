@@ -17,7 +17,7 @@ const Home = () => {
         <div className='homeContainer'>
 
             <NavBar />
-            {/* <Particle /> */}
+            <Particle />
             <ScrollTop />
 
             {/*-------------------TypeWriter----------------------------*/}

@@ -20,7 +20,7 @@ const Resume = () => {
 
         <>
             <NavBar />
-            {/* <Particle /> */}
+            <Particle />
 
             <div className="mainResumeContainer">
                 <div className="resumeContainer">
