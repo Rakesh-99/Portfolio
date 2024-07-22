@@ -1,66 +1,96 @@
-import { useCallback } from "react";
-import Particles from "react-particles";
+import { useEffect, useMemo, useState } from "react";
+import Particles, { initParticlesEngine } from "@tsparticles/react";
 
-import { loadSlim } from "tsparticles-slim";
+import { loadSlim } from "@tsparticles/slim"; // if you are going to use `loadSlim`, install the 
 
 const Particle = () => {
-    const particlesInit = useCallback(async engine => {
-        console.log(engine);
-        await loadSlim(engine);
+    const [init, setInit] = useState(false);
+
+
+    useEffect(() => {
+        initParticlesEngine(async (engine) => {
+
+            await loadSlim(engine);
+
+        }).then(() => {
+            setInit(true);
+        });
     }, []);
 
-    const particlesLoaded = useCallback(async container => {
-        await console.log(container);
-    }, []);
+    const particlesLoaded = (container) => {
+        console.log(container);
+    };
 
-    return (
-        <Particles
-            id="tsparticles"
-            init={particlesInit}
-            loaded={particlesLoaded}
-            params={{
-                particles: {
-                    number: {
-                        value: 200,
-                        density: {
-                            enable: true,
-                            value_area: 1500,
-                        },
+    const options = useMemo(
+        () => ({
+            fpsLimit: 120,
+            interactivity: {
+                events: {
+                    onClick: {
+                        enable: true,
+                        mode: "push",
                     },
-                    line_linked: {
-                        enable: false,
-                        opacity: 0.03,
-                    },
-                    move: {
-                        direction: "right",
-                        speed: 0.10,
-                    },
-                    size: {
-                        value: 1,
-                    },
-                    opacity: {
-                        anim: {
-                            enable: true,
-                            speed: 1,
-                            opacity_min: 0.05,
-                        },
+                    onHover: {
+                        enable: true,
+                        mode: "repulse",
                     },
                 },
-                interactivity: {
-                    events: {
-                        onclick: {
-                            enable: true,
-                            mode: "push",
-                        },
+                modes: {
+                    push: {
+                        quantity: 4,
                     },
-                    modes: {
-                        push: {
-                            particles_nb: 1,
-                        },
+                    repulse: {
+                        distance: 100,
+                        duration: 1,
                     },
-                }
-            }}
-        />
+                },
+            },
+            particles: {
+                color: {
+                    value: "#ffffff",
+                },
+                move: {
+                    direction: "none",
+                    enable: true,
+                    outModes: {
+                        default: "bounce",
+                    },
+                    random: false,
+                    speed: 0.1,
+                    straight: false,
+                },
+                number: {
+                    density: {
+                        enable: true,
+                    },
+                    value: 160,
+                },
+                opacity: {
+                    value: 1,
+                },
+                shape: {
+                    type: "star",
+                },
+                size: {
+                    value: { min: 0.7, max: 0.9 },
+                },
+            },
+            detectRetina: true,
+        }),
+        [],
     );
+
+    if (init) {
+        return (
+            <Particles
+                id="tsparticles"
+                particlesLoaded={particlesLoaded}
+                options={options}
+            />
+        );
+    }
+
+    return <></>;
 };
-export default Particle
+
+export default Particle;
