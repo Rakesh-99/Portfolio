@@ -31,13 +31,13 @@
 .card .navLinks {
   display: flex;
   justify-content: space-around;
-  margin: 1rem 0;
+  margin: 10px 0;
 }
 .card .navLinks a {
   text-decoration: none;
   color: #fff;
-  padding: 10px 30px;
-  border-radius: 5px;
+  padding: 5px 20px;
+  border-radius: 3px;
   background-color: rgb(201, 98, 248);
   margin: 0 2rem;
   transition: 0.2s;
@@ -51,7 +51,7 @@
   padding: 0 10px;
 }
 .card .aboutProject {
-  font-size: 15px;
+  font-size: 13px;
   padding: 0 20px;
   text-align: justify;
 }
