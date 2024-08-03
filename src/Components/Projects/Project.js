@@ -1,29 +1,31 @@
 import React from 'react';
 import ProjectCard from './ProjectCard';
 import '../Projects/Project.css';
-import ProjectCardData from './ProjectCardData';
+import { majorProject, miniProject } from './ProjectCardData';
 import Footer from '../Footer/Footer';
 import Particle from '../Particles/Particle';
 import ScrollTop from '../ScrollTop/ScrollTop';
-import NavBar from '../NavBar/NavBar';
 
 const Project = () => {
 
 
     return (
         <>
-            <NavBar />
             <Particle />
             <ScrollTop />
             <div className='projectInfo'>
                 <h1>See My Work</h1>
-                <p>Here are a few Projects I'have worked on recently</p>
+                <p className='mt-10 font-semibold'>Major Projects</p>
+
             </div>
+
 
             <div className="projectContainer">
                 {
 
-                    ProjectCardData.map((value, index) => {
+                    majorProject.map((value, index) => {
+
+
                         return (
                             <ProjectCard
                                 key={index}
@@ -31,6 +33,7 @@ const Project = () => {
                                 imgSrc={value.imgSrc}
                                 projectTitle={value.projectTitle}
                                 aboutProject={value.aboutProject}
+                                techUsed={value.techUsed}
                                 url1={value.url1}
                                 url2={value.url2}
                             />
@@ -38,6 +41,35 @@ const Project = () => {
                     })
                 }
             </div>
+
+            {/* Mini projects  */}
+
+            <div style={{ background: '#10001f' }} className='text-center'>
+                <p className=' font-semibold'>Mini Projects</p>
+            </div>
+            <div className="projectContainer">
+                {
+                    miniProject.map((value, index) => {
+                        const { techUsed } = value;
+                        console.log(techUsed);
+
+                        return (
+                            <ProjectCard
+                                key={index}
+                                id={index}
+                                imgSrc={value.imgSrc}
+                                projectTitle={value.projectTitle}
+                                aboutProject={value.aboutProject}
+                                techUsed={value.techUsed}
+                                url1={value.url1}
+                                url2={value.url2}
+                            />
+                        )
+                    })
+                }
+            </div>
+
+
 
 
             <Footer />

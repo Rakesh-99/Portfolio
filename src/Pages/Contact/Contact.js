@@ -99,7 +99,6 @@ const Contact = () => {
     return (
 
         <>
-            <NavBar />
             <Particle />
             <ScrollTop />
 

@@ -13,14 +13,14 @@ const Home2 = () => {
 
             <div className="home2Container">
                 <div className="leftContent">
-                    <h1 className='leftHeading'>LET ME <span className='intro'>INTRODUCE</span> MYSELF</h1>
+                    <h1 className='leftHeading md:text-4xl text-xl'>LET ME <span className='intro'>INTRODUCE</span> MYSELF</h1>
                     <h4 className='leftInfo'>I fell in love with programming and I have at least learnt something,I think..🤷‍♂️</h4>
                     <h4 className='leftInfo'>I am fluent in classics like <span className='clrTxt'>Java</span> & <span className='clrTxt'>Javascript </span> </h4>
                     <h4 className='leftInfo'>My field of Interest's are building new  <span className='clrTxt'> Web Technologies and Products  </span>and also in areas related to <span className='clrTxt'> Data Structure</span> & <span className='clrTxt'>Algorithm</span> </h4>
                     <h4 className='leftInfo'>Whenever possible, I also apply my passion for developing products with <span className='clrTxt'>Node.js</span> and <span className='clrTxt'> Modern Javascript Library</span> and  <span className='clrTxt'>Frameworks </span> like <span className='clrTxt'>React.js</span>  and <span className='clrTxt'> Next.js</span></h4>
                 </div>
 
-                <div className="rightContent">
+                <div className="flex items-center justify-center">
                     <img src={ProfileSvg} alt="svgImg" />
                 </div>
             </div>

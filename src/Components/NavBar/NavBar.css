@@ -67,6 +67,7 @@
   font-weight: 500;
   text-decoration: none;
   color: #ececec;
+  display: flex;
 }
 .navUl li a :hover {
   color: rgb(153, 235, 19);

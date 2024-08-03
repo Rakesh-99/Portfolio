@@ -1,11 +1,10 @@
 .projectContainer {
   width: 100%;
   background-color: rgb(16, 0, 31);
-  /* padding: 7rem; */
   color: #fff;
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
+  justify-content: center;
   padding: 3rem;
 }
 
@@ -20,10 +19,9 @@
   margin-top: -4rem;
 }
 
-
 @media screen and (max-width: 1288px) {
   .projectContainer {
-    padding: 3rem 0;
+    padding: 10px;
   }
 }
 @media screen and (max-width: 1199px) {
@@ -33,7 +31,7 @@
 }
 @media screen and (max-width: 996px) {
   .projectContainer {
-    padding: 3rem 1rem; 
+    padding: 3rem 1rem;
   }
 }
 @media screen and (max-width: 895px) {

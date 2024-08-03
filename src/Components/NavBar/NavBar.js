@@ -37,37 +37,37 @@ const NavBar = () => {
             </Link>
 
             <ul className={click ? 'navUl active' : 'navUl'}>
-                <li>
+                <li onClick={clickHandler}>
                     <span className='reactNavIcons'> <AiOutlineHome /> </span>
                     <Link to={'/'}>Home</Link>
                 </li>
 
-                <li>
+                <li onClick={clickHandler}>
                     <span className='reactNavIcons'> <BsPerson /> </span>
                     <Link to={'/about'}>About</Link>
                 </li>
 
-                <li>
+                <li onClick={clickHandler}>
                     <span className='reactNavIcons'> <AiOutlineFundProjectionScreen /> </span>
                     <Link to={'/project'}>Project</Link>
                 </li>
 
-                <li>
+                <li onClick={clickHandler}>
                     <span className='reactNavIcons'> <MdOutlineLibraryBooks /> </span>
                     <Link to={'/resume'}>Resume</Link>
                 </li>
 
-                <li>
+                <li onClick={clickHandler}>
                     <span className='reactNavIcons'> <FaBlog /> </span>
                     <a href="https://blogwizard.vercel.app/">Blog</a>
                 </li>
 
-                <li>
+                <li onClick={clickHandler}>
                     <span className='reactNavIcons'> <MdOutlineConnectWithoutContact /> </span>
                     <Link to={'/contact'}>Contact</Link>
                 </li>
 
-                <li>
+                <li onClick={clickHandler}>
                     <span className='reactNavIcons gitBranch'>
                         <Link to={'https://github.com/Rakesh-99/React-Personal-Portfolio-'}> <GoGitBranch /> <AiFillStar /> </Link>
                     </span>

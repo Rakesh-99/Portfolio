@@ -16,7 +16,6 @@ const Home = () => {
 
         <div className='homeContainer'>
 
-            <NavBar />
             <Particle />
             <ScrollTop />
 
@@ -25,7 +24,7 @@ const Home = () => {
 
 
                 <div className="typeWriterContainer">
-                    <h1 style={{ color: '#fff' }}> Hi There! <span className='wave'>👋</span>
+                    <h1 style={{ color: '#fff' }} className='md:text-3xl text-xl'> Hi There! <span className='wave'>👋</span>
                         <span><motion.h3
                             initial={{ x: -30 }}
                             animate={{ x: 10 }}
@@ -49,11 +48,7 @@ const Home = () => {
 
                                 multiText={[
 
-                                    'Mern Stack Developer',
-                                    'Good understanding in Oops concept',
-                                    'Skilled in Core Java'
-
-
+                                    'Mern Stack Developer'
                                 ]}
                                 multiTextDelay={2000}
                                 typeSpeed={100}
@@ -73,8 +68,6 @@ const Home = () => {
                             duration: 1,
                             delay: 0
                         }}
-
-
                     />
                 </div>
 

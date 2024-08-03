@@ -1,14 +1,13 @@
 import React from 'react';
 import '../About/About.css';
 import aboutImg from '../../Components/Assets/about.png';
-import { FaRegHandPointRight } from 'react-icons/fa'
+import { MdOutlineSchool } from "react-icons/md";
 import Tech from '../../Components/Tech/Tech';
 import Tools from '../../Components/Tool/Tools';
 import Github from '../../Components/Github/Github';
 import Footer from '../../Components/Footer/Footer';
 import Particle from '../../Components/Particles/Particle'
 import ScrollTop from '../../Components/ScrollTop/ScrollTop';
-import NavBar from '../../Components/NavBar/NavBar';
 import { motion } from 'framer-motion';
 
 
@@ -19,7 +18,6 @@ const About = () => {
 
         <div className='aboutContainer'>
 
-            <NavBar />
             <Particle />
             <ScrollTop />
 
@@ -35,33 +33,22 @@ const About = () => {
                                 delay: 0
                             }}
 
-                        >Know Who <span className='iAm'>Iam</span></motion.h1>
+                        ><span className='flex items-center gap-3 border-b'><MdOutlineSchool /><p className='font-semibold'>Education</p> </span></motion.h1>
                     </div>
 
-                    <h2 className='myInfo'>
-                        Hi there, I am <span className='clr'>Rakesh</span> from <span className='clr'>Bhubaneswar,Odisha.</span>
-                        I'm a dedicated web developer with a passion for crafting websites from scratch to completion. To me, creating a website is like editing a photo—every detail matters, and each element contributes to the overall picture. I thrive on designing intuitive and visually appealing user interfaces, meticulously arranging every pixel to achieve the perfect balance between form and function.
-                        <br />
-                        <span className='clr'>You could check my work in project section.</span>
+                    <div className="flex border py-5 rounded-md px-2 shadow-2xl border-gray-700 flex-col gap-4">
+                        <li className='text-sm'>B.TECH in Computer Science ~ Nalanda Institute of Technology, Bhubaneswar (2021-2024)</li>
 
-                    </h2>
+                        <li className='text-sm'>Diploma in Information Technology ~Government Polytechnic,Bhubaneswar(2018-2021) </li>
 
-                    <h2 className='myInfo'>Apart from coding,some other activities that I love !</h2>
-
-                    <div className="hobbiesList">
-                        <span className='handIcons'> <FaRegHandPointRight /> <span className='hobby'>Playing Games</span> </span>
-                        <span className='handIcons'> <FaRegHandPointRight /> <span className='hobby'>Riding Bikes</span> </span>
-                        <span className='handIcons'> <FaRegHandPointRight /> <span className='hobby'>Travelling</span></span>
-                    </div>
-
-                    <div className="quote">
-                        <p style={{ fontStyle: 'italic' }}>"Good software,like Wine, takes time"</p>
-                        <span className='name'>~ Joel Spolsky </span>
+                        <li className='text-sm'>Schooling ~ Lingaraj HighSchool, Dangarpada,Khordha </li>
                     </div>
                 </div>
 
+
+
                 <div className="aboutRightInfo">
-                    <img src={aboutImg} alt="aboutImg" loading='lazy' fetchpriority='high' decoding='async' />
+                    <img src={aboutImg} alt="Img" />
                 </div>
 
             </div>

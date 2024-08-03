@@ -6,7 +6,8 @@ import Project from './Components/Projects/Project'
 import Resume from './Components/Resume/Resume';
 import PageNotFound from './Pages/404Page/PageNotFound';
 import Contact from '../src/Pages/Contact/Contact';
-
+import NavBar from './Components/NavBar/NavBar';
+import ScrollTop from './Components/ScrollTop/ScrollTop';
 import './Style/App.css';
 
 
@@ -16,7 +17,11 @@ const App = () => {
         <div className='appContainer'>
 
             <Router>
+                <NavBar />
+                <ScrollTop />
+
                 <Routes>
+
                     <Route path='/' element={<Home />} />
                     <Route path='/about' element={<About />} />
                     <Route path='/Project' element={<Project />} />
