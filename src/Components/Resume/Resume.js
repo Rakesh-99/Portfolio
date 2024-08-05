@@ -2,8 +2,8 @@ import React from 'react';
 import Footer from '../Footer/Footer';
 import '../Resume/Resume.css';
 import Particle from '../Particles/Particle';
-import RakeshResumePdf from '../Assets/RakeshResume.pdf';
-import RakeshResumeImg from '../Assets/RakeshResume.png';
+import RakeshResumePdf from '../Assets/RakeshUpdatedResume.pdf';
+import RakeshResumeImg from '../Assets/RakeshUpdatedResume.png';
 
 
 
