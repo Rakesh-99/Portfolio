@@ -27,7 +27,7 @@
 }
 
 .wave {
-  font-size: 2.5rem;
+  font-size: 2rem;
   animation-name: waveAnimate;
   animation-duration: 2.5s;
   animation-iteration-count: infinite;

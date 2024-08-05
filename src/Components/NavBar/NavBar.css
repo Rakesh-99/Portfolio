@@ -17,6 +17,7 @@
   font-size: 1rem;
   display: flex;
   align-items: center;
+  margin-right: 5px;
 }
 
 .reactNavIcons.gitBranch {
@@ -68,17 +69,15 @@
   text-decoration: none;
   color: #ececec;
   display: flex;
+  font-family:Verdana
 }
 .navUl li a :hover {
   color: rgb(153, 235, 19);
-
 }
-.navUl li:hover{
+.navUl li:hover {
   text-decoration: underline;
-  text-decoration-color:rgb(209, 209, 209);
-
+  text-decoration-color: rgb(209, 209, 209);
 }
-
 
 .hamBurger {
   display: none;
