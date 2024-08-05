@@ -15,7 +15,7 @@ const Footer = () => {
                     <a href="https://github.com/Rakesh-99"
                         target={'_blank'}
                         rel="noreferrer"
-                    >{<FaGithub />}</a>                 
+                    >{<FaGithub />}</a>
                 </li>
 
                 <li>
@@ -33,7 +33,7 @@ const Footer = () => {
                 </li>
 
                 <li>
-                    <a href="https://www.instagram.com/rakesh_kumar_parida/"
+                    <a href="https:#"
                         target={'_blank'}
                         rel="noreferrer"
                     >{<FaInstagram />}</a>
