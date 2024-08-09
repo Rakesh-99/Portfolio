@@ -17,7 +17,7 @@ const ProjectCard = (props) => {
 
                 <div className="flex flex-col border w-full my-5 border-gray-700 py-2 mx-2 justify-center items-center ">
                     <span className='font-bold text-sm'>Tech used : </span>
-                    <p className='text-sm text-center'>{props.techUsed}</p>
+                    <p className='text-sm text-justify px-5 py-2'>{props.techUsed}</p>
                 </div>
 
                 <div className="navLinks">
