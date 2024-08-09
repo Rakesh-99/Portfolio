@@ -43,16 +43,16 @@ export const miniProject = [
         projectTitle: 'Pet listing',
         aboutProject: 'Developed a pet listing app that provides a comprehensive list of pets available. It includes features like pagination for easy navigation through the list of pets, filtration by animal type to help users find specific pets, and detailed information about each pet.',
         techUsed: 'React, Redux-Toolkit, TailwindCss ',
-        url1: 'https://quote-generator-ten-rust.vercel.app/',
-        url2: 'https://github.com/Rakesh-99/quote-generator'
+        url1: 'https://pet-listing-assignment-2.vercel.app/',
+        url2: 'https://github.com/Rakesh-99/pet-listing-assignment'
     },
     {
         imgSrc: quote,
         projectTitle: 'Quote generater',
         aboutProject: 'developed a quote app using React and Redux Toolkit. The app generates a new quote each time a button is clicked, providing users with fresh and inspiring content. ',
         techUsed: 'ReactJs, TailwindCss, Redux-toolkit',
-        url1: 'https://react-pet-listing-app.vercel.app/',
-        url2: 'https://github.com/Rakesh-99/React-Pet-listing-App-'
+        url1: 'https://quote-generator-ten-rust.vercel.app/',
+        url2: 'https://github.com/Rakesh-99/quote-generator'
     },
     {
         imgSrc: wather,
