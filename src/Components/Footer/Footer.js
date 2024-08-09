@@ -8,7 +8,7 @@ const Footer = () => {
     return (
         <div className="footerSection">
             <p>Designed and Developed by Rakesh Kumar Parida</p>
-            <p>Copyright © 2023 Rakesh</p>
+            <p>2024 | Rakesh</p>
             <ul className="footerIcons">
 
                 <li>
