@@ -43,7 +43,7 @@ export const miniProject = [
         projectTitle: 'Pet listing',
         aboutProject: 'Developed a pet listing app that provides a comprehensive list of pets available. It includes features like pagination for easy navigation through the list of pets, filtration by animal type to help users find specific pets, and detailed information about each pet.',
         techUsed: 'React, Redux-Toolkit, TailwindCss ',
-        url1: 'https://pet-listing-assignment-2.vercel.app/',
+        url1: 'https://pet-listing-assignment.vercel.app/',
         url2: 'https://github.com/Rakesh-99/pet-listing-assignment'
     },
     {
